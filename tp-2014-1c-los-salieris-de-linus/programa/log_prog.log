@@ -1,0 +1,147 @@
+[INFO] 12:08:21:271 log_prog.log/(2426:2426): Entro al programa
+[INFO] 12:08:21:271 log_prog.log/(2426:2426): Tamanio de codigo: 674
+
+[INFO] 12:08:38:119 log_prog.log/(2435:2435): Entro al programa
+[INFO] 12:08:38:120 log_prog.log/(2435:2435): Tamanio de codigo: 674
+
+[INFO] 12:08:38:122 log_prog.log/(2435:2435): Conectado al Kernel
+[INFO] 12:11:25:1 log_prog.log/(2454:2454): Entro al programa
+[INFO] 12:11:25:1 log_prog.log/(2454:2454): Tamanio de codigo: 674
+
+[INFO] 12:11:26:5 log_prog.log/(2454:2454): Conectado al Kernel
+[INFO] 12:22:53:661 log_prog.log/(2529:2529): Entro al programa
+[INFO] 12:22:53:662 log_prog.log/(2529:2529): Tamanio de codigo: 612
+
+[INFO] 12:22:53:663 log_prog.log/(2529:2529): Conectado al Kernel
+[ERROR] 12:22:53:797 log_prog.log/(2529:2529): Fallo la carga final del programa
+[INFO] 12:23:37:612 log_prog.log/(2539:2539): Entro al programa
+[INFO] 12:23:37:613 log_prog.log/(2539:2539): Tamanio de codigo: 612
+
+[INFO] 12:23:37:614 log_prog.log/(2539:2539): Conectado al Kernel
+[ERROR] 12:23:37:742 log_prog.log/(2539:2539): Fallo la carga final del programa
+[INFO] 12:24:01:391 log_prog.log/(2549:2549): Entro al programa
+[INFO] 12:24:01:395 log_prog.log/(2549:2549): Tamanio de codigo: 129
+
+[INFO] 12:24:01:399 log_prog.log/(2549:2549): Conectado al Kernel
+[INFO] 12:24:44:491 log_prog.log/(2553:2553): Entro al programa
+[INFO] 12:24:44:492 log_prog.log/(2553:2553): Tamanio de codigo: 67
+
+[INFO] 12:24:44:495 log_prog.log/(2553:2553): Conectado al Kernel
+[INFO] 12:26:28:778 log_prog.log/(2554:2554): Entro al programa
+[INFO] 12:26:28:780 log_prog.log/(2554:2554): Tamanio de codigo: 612
+
+[INFO] 12:26:28:780 log_prog.log/(2554:2554): Conectado al Kernel
+[ERROR] 12:26:28:916 log_prog.log/(2554:2554): Fallo la carga final del programa
+[INFO] 12:27:11:479 log_prog.log/(2571:2571): Entro al programa
+[INFO] 12:27:11:479 log_prog.log/(2571:2571): Tamanio de codigo: 612
+
+[INFO] 12:27:11:480 log_prog.log/(2571:2571): Conectado al Kernel
+[ERROR] 12:27:11:597 log_prog.log/(2571:2571): Fallo la carga final del programa
+[INFO] 12:28:51:851 log_prog.log/(2583:2583): Entro al programa
+[INFO] 12:28:51:851 log_prog.log/(2583:2583): Tamanio de codigo: 612
+
+[INFO] 12:28:51:853 log_prog.log/(2583:2583): Conectado al Kernel
+[ERROR] 12:28:51:976 log_prog.log/(2583:2583): Fallo la carga final del programa
+[INFO] 12:29:15:232 log_prog.log/(2600:2600): Entro al programa
+[INFO] 12:29:15:234 log_prog.log/(2600:2600): Tamanio de codigo: 612
+
+[INFO] 12:29:15:235 log_prog.log/(2600:2600): Conectado al Kernel
+[ERROR] 12:29:15:349 log_prog.log/(2600:2600): Fallo la carga final del programa
+[INFO] 12:30:39:557 log_prog.log/(2613:2613): Entro al programa
+[INFO] 12:30:39:557 log_prog.log/(2613:2613): Tamanio de codigo: 674
+
+[INFO] 12:30:39:559 log_prog.log/(2613:2613): Conectado al Kernel
+[INFO] 12:32:55:346 log_prog.log/(2623:2623): Entro al programa
+[INFO] 12:32:55:347 log_prog.log/(2623:2623): Tamanio de codigo: 674
+
+[INFO] 12:32:55:348 log_prog.log/(2623:2623): Conectado al Kernel
+[INFO] 12:34:29:487 log_prog.log/(2627:2627): Entro al programa
+[INFO] 12:34:29:799 log_prog.log/(2627:2627): Tamanio de codigo: 674
+
+[INFO] 12:34:33:501 log_prog.log/(2627:2627): Conectado al Kernel
+[INFO] 12:36:46:823 log_prog.log/(2640:2640): Entro al programa
+[INFO] 12:36:47:96 log_prog.log/(2640:2640): Tamanio de codigo: 674
+
+[INFO] 12:37:01:613 log_prog.log/(2640:2640): Conectado al Kernel
+[INFO] 12:39:17:981 log_prog.log/(2657:2657): Entro al programa
+[INFO] 12:39:18:612 log_prog.log/(2657:2657): Tamanio de codigo: 674
+
+[INFO] 12:39:19:156 log_prog.log/(2657:2657): Conectado al Kernel
+[INFO] 12:41:38:782 log_prog.log/(2661:2661): Entro al programa
+[INFO] 12:41:38:782 log_prog.log/(2661:2661): Tamanio de codigo: 674
+
+[INFO] 12:41:38:784 log_prog.log/(2661:2661): Conectado al Kernel
+[INFO] 12:42:41:998 log_prog.log/(2662:2662): Entro al programa
+[INFO] 12:42:41:998 log_prog.log/(2662:2662): Tamanio de codigo: 67
+
+[INFO] 12:42:41:999 log_prog.log/(2662:2662): Conectado al Kernel
+[INFO] 12:43:46:34 log_prog.log/(2668:2668): Entro al programa
+[INFO] 12:43:46:34 log_prog.log/(2668:2668): Tamanio de codigo: 303
+
+[INFO] 12:43:46:37 log_prog.log/(2668:2668): Conectado al Kernel
+[INFO] 12:46:57:595 log_prog.log/(2676:2676): Entro al programa
+[INFO] 12:46:57:598 log_prog.log/(2676:2676): Tamanio de codigo: 911
+
+[INFO] 12:46:57:600 log_prog.log/(2676:2676): Conectado al Kernel
+[INFO] 12:50:06:99 log_prog.log/(2686:2686): Entro al programa
+[INFO] 12:50:06:100 log_prog.log/(2686:2686): Tamanio de codigo: 674
+
+[INFO] 12:50:06:101 log_prog.log/(2686:2686): Conectado al Kernel
+[INFO] 12:52:21:829 log_prog.log/(2696:2696): Entro al programa
+[INFO] 12:52:22:124 log_prog.log/(2696:2696): Tamanio de codigo: 674
+
+[INFO] 12:52:26:920 log_prog.log/(2696:2696): Conectado al Kernel
+[INFO] 12:55:09:28 log_prog.log/(2735:2735): Entro al programa
+[INFO] 12:55:09:32 log_prog.log/(2735:2735): Tamanio de codigo: 674
+
+[INFO] 12:55:09:34 log_prog.log/(2735:2735): Conectado al Kernel
+[INFO] 12:55:33:958 log_prog.log/(2743:2743): Entro al programa
+[INFO] 12:55:33:958 log_prog.log/(2743:2743): Tamanio de codigo: 674
+
+[INFO] 12:55:33:960 log_prog.log/(2743:2743): Conectado al Kernel
+[INFO] 12:56:51:67 log_prog.log/(2752:2752): Entro al programa
+[INFO] 12:56:51:68 log_prog.log/(2752:2752): Tamanio de codigo: 674
+
+[INFO] 12:57:28:743 log_prog.log/(2761:2761): Entro al programa
+[INFO] 12:57:28:743 log_prog.log/(2761:2761): Tamanio de codigo: 674
+
+[INFO] 12:57:28:745 log_prog.log/(2761:2761): Conectado al Kernel
+[INFO] 13:09:36:338 log_prog.log/(2845:2845): Entro al programa
+[INFO] 13:09:36:338 log_prog.log/(2845:2845): Tamanio de codigo: 303
+
+[INFO] 13:09:36:338 log_prog.log/(2845:2845): Conectado al Kernel
+[INFO] 13:10:47:745 log_prog.log/(2848:2848): Entro al programa
+[INFO] 13:10:47:746 log_prog.log/(2848:2848): Tamanio de codigo: 674
+
+[INFO] 13:10:47:749 log_prog.log/(2848:2848): Conectado al Kernel
+[INFO] 13:55:20:88 log_prog.log/(2903:2903): Entro al programa
+[INFO] 13:55:20:89 log_prog.log/(2903:2903): Tamanio de codigo: 303
+
+[INFO] 13:55:22:912 log_prog.log/(2904:2904): Entro al programa
+[INFO] 13:55:22:912 log_prog.log/(2904:2904): Tamanio de codigo: 303
+
+[INFO] 13:55:36:599 log_prog.log/(2908:2908): Entro al programa
+[INFO] 13:55:36:599 log_prog.log/(2908:2908): Tamanio de codigo: 674
+
+[INFO] 13:56:07:490 log_prog.log/(2919:2919): Entro al programa
+[INFO] 13:56:07:490 log_prog.log/(2919:2919): Tamanio de codigo: 674
+
+[INFO] 13:56:23:430 log_prog.log/(2927:2927): Entro al programa
+[INFO] 13:56:23:431 log_prog.log/(2927:2927): Tamanio de codigo: 674
+
+[INFO] 13:56:54:658 log_prog.log/(2943:2943): Entro al programa
+[INFO] 13:56:54:660 log_prog.log/(2943:2943): Tamanio de codigo: 674
+
+[INFO] 13:56:54:661 log_prog.log/(2943:2943): Conectado al Kernel
+[INFO] 13:58:15:501 log_prog.log/(2953:2953): Entro al programa
+[INFO] 13:58:15:501 log_prog.log/(2953:2953): Tamanio de codigo: 674
+
+[INFO] 13:58:15:502 log_prog.log/(2953:2953): Conectado al Kernel
+[INFO] 13:59:47:770 log_prog.log/(2961:2961): Entro al programa
+[INFO] 13:59:47:773 log_prog.log/(2961:2961): Tamanio de codigo: 674
+
+[INFO] 13:59:47:775 log_prog.log/(2961:2961): Conectado al Kernel
+[INFO] 14:01:12:918 log_prog.log/(2967:2967): Entro al programa
+[INFO] 14:01:12:919 log_prog.log/(2967:2967): Tamanio de codigo: 303
+
+[INFO] 14:01:12:920 log_prog.log/(2967:2967): Conectado al Kernel

@@ -1,0 +1,9 @@
+#!/home/utnso/workspace/programa/programa
+
+begin
+variables A
+io Impresora 5
+	A = 5
+   print A
+
+end

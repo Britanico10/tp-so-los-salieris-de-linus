@@ -1,0 +1,14 @@
+#!/home/utnso/workspace/programa/programa
+begin	
+	:etiqueta
+	
+	wait b
+		!colas = !colas +1
+	signal c
+	
+	#Ciclar indefinidamente
+	goto etiqueta
+
+end
+
+

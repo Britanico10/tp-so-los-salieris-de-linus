@@ -1,0 +1,2026 @@
+[INFO] 12:04:13:17 umv/(2307:2307): Configuracion leida y cargada
+[INFO] 12:04:13:18 umv/(2307:2307): Se reservo el espacio inicial de 5000 bytes
+[INFO] 12:04:13:18 umv/(2307:2307): Se inicializo los semaforos
+[INFO] 12:04:13:18 umv/(2307:2307): Inicio la ejecucion de la consola
+[INFO] 12:04:13:18 umv/(2307:2307): Socket en escucha creado en el puerto 8887
+[INFO] 12:08:27:985 umv/(2307:2307): Kernel conectado
+[INFO] 12:08:34:53 umv/(2307:2307): CPU 1 conectada
+[INFO] 12:08:34:54 umv/(2307:2434): 
+CPU 1 conectado
+
+[INFO] 12:08:38:124 umv/(2307:2432): HILO KERNEL: Intento por crear segmento(pid = 1, tamanio = 672)
+[INFO] 12:08:38:144 umv/(2307:2432): HILO KERNEL. Nuevo segmento: base otorgada = 600196455
+[INFO] 12:08:38:144 umv/(2307:2432): HILO KERNEL: Intento por crear segmento(pid = 1, tamanio = 73)
+[INFO] 12:08:38:164 umv/(2307:2432): HILO KERNEL. Nuevo segmento: base otorgada = 1215535209
+[INFO] 12:08:38:164 umv/(2307:2432): HILO KERNEL: Intento por crear segmento(pid = 1, tamanio = 300)
+[INFO] 12:08:38:185 umv/(2307:2432): HILO KERNEL. Nuevo segmento: base otorgada = 1560271953
+[INFO] 12:08:38:185 umv/(2307:2432): HILO KERNEL: Intento por crear segmento(pid = 1, tamanio = 208)
+[INFO] 12:08:38:205 umv/(2307:2432): HILO KERNEL. Nuevo segmento: base otorgada = 1491899466
+[INFO] 12:08:38:206 umv/(2307:2432): HILO KERNEL. Intento por escribir segmento(base = 600196455,offset = 0, tamanio = 672)
+[INFO] 12:08:38:206 umv/(2307:2432): Escribir segmento: contenido: #!/home/utnso/workspace/tp-2014-1c-los-salieris-de-linus/programa/programa
+
+#Respuesta esperada: 1; 1; Hola Mundo!; 3; Bye
+
+function imprimir
+        print $0+1
+end
+
+begin
+variables f,  A,  g
+    A = 	0
+    !compartida = 1+A
+    print !compartida
+    jnz !compartida Siguiente 
+:Proximo
+	
+    f = 8	  
+    g <- doble !compartida
+    io LPT1 20
+    io HDD1 10
+
+    textPrint    Hola Mundo!
+    
+    sumar1 &g		
+    print 		g    
+    
+    sinParam
+    
+end
+
+function sinParam
+	textPrint Bye
+end
+
+#Devolver el doble del
+#primer parametro
+function doble
+variables f
+    f = $0 + $0
+    return f
+end
+
+function sumar1
+	*$0 = 1 + *$0
+end
+
+:Siguiente	
+    imprimir A
+goto Proximo
+imir
+[INFO] 12:08:38:226 umv/(2307:2432): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:08:38:227 umv/(2307:2432): HILO KERNEL. Intento por escribir segmento(base = 1215535209,offset = 0, tamanio = 73)
+[INFO] 12:08:38:227 umv/(2307:2432): Escribir segmento: contenido: imprimir
+[INFO] 12:08:38:247 umv/(2307:2432): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:08:38:248 umv/(2307:2432): HILO KERNEL. Intento por escribir segmento(base = 1491899466,offset = 0, tamanio = 208)
+[INFO] 12:08:38:248 umv/(2307:2432): Escribir segmento: contenido: Ž
+[INFO] 12:08:38:268 umv/(2307:2432): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:08:38:290 umv/(2307:2434): Cambio al proceso 1
+[INFO] 12:08:39:415 umv/(2307:2434): Cambio al proceso 1
+[INFO] 12:08:40:520 umv/(2307:2434): Cambio al proceso 1
+[INFO] 12:08:41:623 umv/(2307:2434): Cambio al proceso 1
+[INFO] 12:08:42:745 umv/(2307:2434): Cambio al proceso 1
+[INFO] 12:08:43:848 umv/(2307:2434): Cambio al proceso 1
+[INFO] 12:08:45:55 umv/(2307:2434): Cambio al proceso 1
+[INFO] 12:08:46:197 umv/(2307:2434): Cambio al proceso 1
+[INFO] 12:08:47:342 umv/(2307:2434): Cambio al proceso 1
+[INFO] 12:08:48:448 umv/(2307:2434): Cambio al proceso 1
+[INFO] 12:08:49:552 umv/(2307:2434): Cambio al proceso 1
+[INFO] 12:08:50:760 umv/(2307:2434): Cambio al proceso 1
+[INFO] 12:08:51:864 umv/(2307:2434): Cambio al proceso 1
+[INFO] 12:08:53:7 umv/(2307:2434): Cambio al proceso 1
+[INFO] 12:08:54:213 umv/(2307:2434): Cambio al proceso 1
+[INFO] 12:09:15:299 umv/(2307:2434): Cambio al proceso 1
+[INFO] 12:09:21:384 umv/(2307:2434): Cambio al proceso 1
+[INFO] 12:09:22:468 umv/(2307:2434): Cambio al proceso 1
+[INFO] 12:09:23:653 umv/(2307:2434): Cambio al proceso 1
+[INFO] 12:09:24:819 umv/(2307:2434): Cambio al proceso 1
+[INFO] 12:09:25:962 umv/(2307:2434): Cambio al proceso 1
+[INFO] 12:09:27:105 umv/(2307:2434): Cambio al proceso 1
+[INFO] 12:09:28:251 umv/(2307:2434): Cambio al proceso 1
+[INFO] 12:09:29:349 umv/(2307:2434): Cambio al proceso 1
+[INFO] 12:09:30:472 umv/(2307:2434): Cambio al proceso 1
+[INFO] 12:11:26:6 umv/(2307:2432): HILO KERNEL: Intento por crear segmento(pid = 2, tamanio = 672)
+[INFO] 12:11:26:26 umv/(2307:2432): HILO KERNEL. Nuevo segmento: base otorgada = 2093817641
+[INFO] 12:11:26:27 umv/(2307:2432): HILO KERNEL: Intento por crear segmento(pid = 2, tamanio = 73)
+[INFO] 12:11:26:47 umv/(2307:2432): HILO KERNEL. Nuevo segmento: base otorgada = -676636486
+[INFO] 12:11:26:47 umv/(2307:2432): HILO KERNEL: Intento por crear segmento(pid = 2, tamanio = 300)
+[INFO] 12:11:26:68 umv/(2307:2432): HILO KERNEL. Nuevo segmento: base otorgada = 519782898
+[INFO] 12:11:26:68 umv/(2307:2432): HILO KERNEL: Intento por crear segmento(pid = 2, tamanio = 208)
+[INFO] 12:11:26:90 umv/(2307:2432): HILO KERNEL. Nuevo segmento: base otorgada = -515462685
+[INFO] 12:11:26:90 umv/(2307:2432): HILO KERNEL. Intento por escribir segmento(base = 2093817641,offset = 0, tamanio = 672)
+[INFO] 12:11:26:90 umv/(2307:2432): Escribir segmento: contenido: #!/home/utnso/workspace/tp-2014-1c-los-salieris-de-linus/programa/programa
+
+#Respuesta esperada: 1; 1; Hola Mundo!; 3; Bye
+
+function imprimir
+        print $0+1
+end
+
+begin
+variables f,  A,  g
+    A = 	0
+    !compartida = 1+A
+    print !compartida
+    jnz !compartida Siguiente 
+:Proximo
+	
+    f = 8	  
+    g <- doble !compartida
+    io LPT1 20
+    io HDD1 10
+
+    textPrint    Hola Mundo!
+    
+    sumar1 &g		
+    print 		g    
+    
+    sinParam
+    
+end
+
+function sinParam
+	textPrint Bye
+end
+
+#Devolver el doble del
+#primer parametro
+function doble
+variables f
+    f = $0 + $0
+    return f
+end
+
+function sumar1
+	*$0 = 1 + *$0
+end
+
+:Siguiente	
+    imprimir A
+goto Proximo
+imir
+[INFO] 12:11:26:110 umv/(2307:2432): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:11:26:111 umv/(2307:2432): HILO KERNEL. Intento por escribir segmento(base = -676636486,offset = 0, tamanio = 73)
+[INFO] 12:11:26:111 umv/(2307:2432): Escribir segmento: contenido: imprimir
+[INFO] 12:11:26:131 umv/(2307:2432): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:11:26:132 umv/(2307:2432): HILO KERNEL. Intento por escribir segmento(base = -515462685,offset = 0, tamanio = 208)
+[INFO] 12:11:26:132 umv/(2307:2432): Escribir segmento: contenido: Ž
+[INFO] 12:11:26:152 umv/(2307:2432): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:11:26:174 umv/(2307:2434): Cambio al proceso 2
+[INFO] 12:11:27:299 umv/(2307:2434): Cambio al proceso 2
+[INFO] 12:11:28:402 umv/(2307:2434): Cambio al proceso 2
+[INFO] 12:11:29:506 umv/(2307:2434): Cambio al proceso 2
+[INFO] 12:11:30:631 umv/(2307:2434): Cambio al proceso 2
+[INFO] 12:11:31:735 umv/(2307:2434): Cambio al proceso 2
+[INFO] 12:11:32:939 umv/(2307:2434): Cambio al proceso 2
+[INFO] 12:11:34:83 umv/(2307:2434): Cambio al proceso 2
+[INFO] 12:11:35:228 umv/(2307:2434): Cambio al proceso 2
+[INFO] 12:11:36:331 umv/(2307:2434): Cambio al proceso 2
+[INFO] 12:11:37:433 umv/(2307:2434): Cambio al proceso 2
+[INFO] 12:11:38:642 umv/(2307:2434): Cambio al proceso 2
+[INFO] 12:11:39:747 umv/(2307:2434): Cambio al proceso 2
+[INFO] 12:11:40:895 umv/(2307:2434): Cambio al proceso 2
+[INFO] 12:11:42:100 umv/(2307:2434): Cambio al proceso 2
+[INFO] 12:12:03:183 umv/(2307:2434): Cambio al proceso 2
+[INFO] 12:12:09:267 umv/(2307:2434): Cambio al proceso 2
+[INFO] 12:12:10:351 umv/(2307:2434): Cambio al proceso 2
+[INFO] 12:12:11:538 umv/(2307:2434): Cambio al proceso 2
+[INFO] 12:12:12:705 umv/(2307:2434): Cambio al proceso 2
+[INFO] 12:12:13:848 umv/(2307:2434): Cambio al proceso 2
+[INFO] 12:12:14:989 umv/(2307:2434): Cambio al proceso 2
+[INFO] 12:12:16:135 umv/(2307:2434): Cambio al proceso 2
+[INFO] 12:12:17:237 umv/(2307:2434): Cambio al proceso 2
+[INFO] 12:12:18:360 umv/(2307:2434): Cambio al proceso 2
+[INFO] 12:23:28:672 umv/(2307:2307): Kernel conectado
+[INFO] 12:23:33:459 umv/(2307:2307): CPU 2 conectada
+[INFO] 12:23:33:459 umv/(2307:2538): 
+CPU 2 conectado
+
+[INFO] 12:23:46:12 umv/(2307:2307): Kernel conectado
+[INFO] 12:23:56:148 umv/(2307:2307): CPU 3 conectada
+[INFO] 12:23:56:148 umv/(2307:2548): 
+CPU 3 conectado
+
+[INFO] 12:24:01:400 umv/(2307:2546): HILO KERNEL: Intento por crear segmento(pid = 1, tamanio = 127)
+[INFO] 12:24:01:420 umv/(2307:2546): HILO KERNEL. Nuevo segmento: base otorgada = 1656881276
+[INFO] 12:24:01:420 umv/(2307:2546): HILO KERNEL: Intento por crear segmento(pid = 1, tamanio = 300)
+[INFO] 12:24:01:440 umv/(2307:2546): HILO KERNEL. Nuevo segmento: base otorgada = 670566484
+[INFO] 12:24:01:440 umv/(2307:2546): HILO KERNEL: Intento por crear segmento(pid = 1, tamanio = 40)
+[INFO] 12:24:01:461 umv/(2307:2546): HILO KERNEL. Nuevo segmento: base otorgada = -370662629
+[INFO] 12:24:01:461 umv/(2307:2546): HILO KERNEL. Intento por escribir segmento(base = 1656881276,offset = 0, tamanio = 127)
+[INFO] 12:24:01:461 umv/(2307:2546): Escribir segmento: contenido: #!/home/utnso/workspace/tp-2014-1c-los-salieris-de-linus/programa/programa
+begin
+	variables a, b
+	a = 3
+	b = 5
+	a = b + 12
+end
+= 5
+	
+[INFO] 12:24:01:481 umv/(2307:2546): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:24:01:481 umv/(2307:2546): HILO KERNEL. Intento por escribir segmento(base = -370662629,offset = 0, tamanio = 40)
+[INFO] 12:24:01:481 umv/(2307:2546): Escribir segmento: contenido: Q
+[INFO] 12:24:01:501 umv/(2307:2546): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:24:01:523 umv/(2307:2548): Cambio al proceso 1
+[INFO] 12:24:02:628 umv/(2307:2548): Cambio al proceso 1
+[INFO] 12:24:03:733 umv/(2307:2548): Cambio al proceso 1
+[INFO] 12:24:04:837 umv/(2307:2548): Cambio al proceso 1
+[INFO] 12:24:05:961 umv/(2307:2548): Cambio al proceso 1
+[INFO] 12:24:44:496 umv/(2307:2546): HILO KERNEL: Intento por crear segmento(pid = 2, tamanio = 65)
+[INFO] 12:24:44:517 umv/(2307:2546): HILO KERNEL. Nuevo segmento: base otorgada = 1133366759
+[INFO] 12:24:44:517 umv/(2307:2546): HILO KERNEL: Intento por crear segmento(pid = 2, tamanio = 300)
+[INFO] 12:24:44:537 umv/(2307:2546): HILO KERNEL. Nuevo segmento: base otorgada = 626659190
+[INFO] 12:24:44:538 umv/(2307:2546): HILO KERNEL: Intento por crear segmento(pid = 2, tamanio = 40)
+[INFO] 12:24:44:558 umv/(2307:2546): HILO KERNEL. Nuevo segmento: base otorgada = 1919154478
+[INFO] 12:24:44:559 umv/(2307:2546): HILO KERNEL. Intento por escribir segmento(base = 1133366759,offset = 0, tamanio = 65)
+[INFO] 12:24:44:559 umv/(2307:2546): Escribir segmento: contenido: #!./programa
+begin
+	variables a, b
+	a = 3
+	b = 5
+	a = b + 12
+end
+= 5
+[INFO] 12:24:44:579 umv/(2307:2546): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:24:44:580 umv/(2307:2546): HILO KERNEL. Intento por escribir segmento(base = 1919154478,offset = 0, tamanio = 40)
+[INFO] 12:24:44:580 umv/(2307:2546): Escribir segmento: contenido: 
+[INFO] 12:24:44:601 umv/(2307:2546): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:24:44:623 umv/(2307:2548): Cambio al proceso 2
+[INFO] 12:24:45:727 umv/(2307:2548): Cambio al proceso 2
+[INFO] 12:24:46:831 umv/(2307:2548): Cambio al proceso 2
+[INFO] 12:24:47:935 umv/(2307:2548): Cambio al proceso 2
+[INFO] 12:24:49:59 umv/(2307:2548): Cambio al proceso 2
+[INFO] 12:26:35:944 umv/(2307:2307): Kernel conectado
+[INFO] 12:26:40:383 umv/(2307:2307): CPU 4 conectada
+[INFO] 12:26:40:383 umv/(2307:2563): 
+CPU 4 conectado
+
+[INFO] 12:28:45:297 umv/(2307:2307): Kernel conectado
+[INFO] 12:28:48:812 umv/(2307:2307): CPU 5 conectada
+[INFO] 12:28:48:812 umv/(2307:2582): 
+CPU 5 conectado
+
+[INFO] 12:29:02:118 umv/(2307:2307): Kernel conectado
+[INFO] 12:29:05:677 umv/(2307:2307): CPU 6 conectada
+[INFO] 12:29:05:677 umv/(2307:2592): 
+CPU 6 conectado
+
+[INFO] 12:29:37:236 umv/(2307:2307): Kernel conectado
+[INFO] 12:29:40:180 umv/(2307:2307): CPU 7 conectada
+[INFO] 12:29:40:180 umv/(2307:2609): 
+CPU 7 conectado
+
+[INFO] 12:30:39:561 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 1, tamanio = 672)
+[INFO] 12:30:39:582 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = -677395917
+[INFO] 12:30:39:582 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 1, tamanio = 73)
+[INFO] 12:30:39:602 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = 127583433
+[INFO] 12:30:39:603 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 1, tamanio = 300)
+[INFO] 12:30:39:623 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = 1563622246
+[INFO] 12:30:39:623 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 1, tamanio = 208)
+[INFO] 12:30:39:644 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = -675852275
+[INFO] 12:30:39:644 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = -677395917,offset = 0, tamanio = 672)
+[INFO] 12:30:39:645 umv/(2307:2607): Escribir segmento: contenido: #!/home/utnso/workspace/tp-2014-1c-los-salieris-de-linus/programa/programa
+
+#Respuesta esperada: 1; 1; Hola Mundo!; 3; Bye
+
+function imprimir
+        print $0+1
+end
+
+begin
+variables f,  A,  g
+    A = 	0
+    !compartida = 1+A
+    print !compartida
+    jnz !compartida Siguiente 
+:Proximo
+	
+    f = 8	  
+    g <- doble !compartida
+    io LPT1 20
+    io HDD1 10
+
+    textPrint    Hola Mundo!
+    
+    sumar1 &g		
+    print 		g    
+    
+    sinParam
+    
+end
+
+function sinParam
+	textPrint Bye
+end
+
+#Devolver el doble del
+#primer parametro
+function doble
+variables f
+    f = $0 + $0
+    return f
+end
+
+function sumar1
+	*$0 = 1 + *$0
+end
+
+:Siguiente	
+    imprimir A
+goto Proximo
+imir
+[INFO] 12:30:39:665 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:30:39:667 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = 127583433,offset = 0, tamanio = 73)
+[INFO] 12:30:39:667 umv/(2307:2607): Escribir segmento: contenido: imprimir
+[INFO] 12:30:39:687 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:30:39:688 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = -675852275,offset = 0, tamanio = 208)
+[INFO] 12:30:39:688 umv/(2307:2607): Escribir segmento: contenido: Ž
+[INFO] 12:30:39:708 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:30:39:730 umv/(2307:2609): Cambio al proceso 1
+[INFO] 12:30:40:854 umv/(2307:2609): Cambio al proceso 1
+[INFO] 12:30:41:957 umv/(2307:2609): Cambio al proceso 1
+[INFO] 12:30:43:61 umv/(2307:2609): Cambio al proceso 1
+[INFO] 12:30:44:181 umv/(2307:2609): Cambio al proceso 1
+[INFO] 12:30:45:287 umv/(2307:2609): Cambio al proceso 1
+[INFO] 12:30:46:492 umv/(2307:2609): Cambio al proceso 1
+[INFO] 12:30:47:633 umv/(2307:2609): Cambio al proceso 1
+[INFO] 12:30:48:778 umv/(2307:2609): Cambio al proceso 1
+[INFO] 12:30:49:883 umv/(2307:2609): Cambio al proceso 1
+[INFO] 12:30:50:986 umv/(2307:2609): Cambio al proceso 1
+[INFO] 12:30:52:197 umv/(2307:2609): Cambio al proceso 1
+[INFO] 12:30:53:302 umv/(2307:2609): Cambio al proceso 1
+[INFO] 12:30:54:446 umv/(2307:2609): Cambio al proceso 1
+[INFO] 12:30:55:651 umv/(2307:2609): Cambio al proceso 1
+[INFO] 12:31:16:735 umv/(2307:2609): Cambio al proceso 1
+[INFO] 12:31:22:819 umv/(2307:2609): Cambio al proceso 1
+[INFO] 12:31:23:904 umv/(2307:2609): Cambio al proceso 1
+[INFO] 12:31:25:89 umv/(2307:2609): Cambio al proceso 1
+[INFO] 12:31:26:254 umv/(2307:2609): Cambio al proceso 1
+[INFO] 12:31:27:398 umv/(2307:2609): Cambio al proceso 1
+[INFO] 12:31:28:541 umv/(2307:2609): Cambio al proceso 1
+[INFO] 12:31:29:685 umv/(2307:2609): Cambio al proceso 1
+[INFO] 12:31:30:785 umv/(2307:2609): Cambio al proceso 1
+[INFO] 12:31:31:908 umv/(2307:2609): Cambio al proceso 1
+[INFO] 12:32:55:348 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 2, tamanio = 672)
+[INFO] 12:32:55:368 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = -463947215
+[INFO] 12:32:55:369 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 2, tamanio = 73)
+[INFO] 12:32:55:389 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = -648400733
+[INFO] 12:32:55:390 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 2, tamanio = 300)
+[INFO] 12:32:55:410 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = -1990368987
+[INFO] 12:32:55:410 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 2, tamanio = 208)
+[INFO] 12:32:55:430 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = -1558728443
+[INFO] 12:32:55:431 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = -463947215,offset = 0, tamanio = 672)
+[INFO] 12:32:55:431 umv/(2307:2607): Escribir segmento: contenido: #!/home/utnso/workspace/tp-2014-1c-los-salieris-de-linus/programa/programa
+
+#Respuesta esperada: 1; 1; Hola Mundo!; 3; Bye
+
+function imprimir
+        print $0+1
+end
+
+begin
+variables f,  A,  g
+    A = 	0
+    !compartida = 1+A
+    print !compartida
+    jnz !compartida Siguiente 
+:Proximo
+	
+    f = 8	  
+    g <- doble !compartida
+    io LPT1 20
+    io HDD1 10
+
+    textPrint    Hola Mundo!
+    
+    sumar1 &g		
+    print 		g    
+    
+    sinParam
+    
+end
+
+function sinParam
+	textPrint Bye
+end
+
+#Devolver el doble del
+#primer parametro
+function doble
+variables f
+    f = $0 + $0
+    return f
+end
+
+function sumar1
+	*$0 = 1 + *$0
+end
+
+:Siguiente	
+    imprimir A
+goto Proximo
+imir
+[INFO] 12:32:55:451 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:32:55:452 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = -648400733,offset = 0, tamanio = 73)
+[INFO] 12:32:55:452 umv/(2307:2607): Escribir segmento: contenido: imprimir
+[INFO] 12:32:55:472 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:32:55:473 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = -1558728443,offset = 0, tamanio = 208)
+[INFO] 12:32:55:473 umv/(2307:2607): Escribir segmento: contenido: Ž
+[INFO] 12:32:55:494 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:32:55:515 umv/(2307:2609): Cambio al proceso 2
+[INFO] 12:32:56:638 umv/(2307:2609): Cambio al proceso 2
+[INFO] 12:32:57:742 umv/(2307:2609): Cambio al proceso 2
+[INFO] 12:32:58:845 umv/(2307:2609): Cambio al proceso 2
+[INFO] 12:32:59:965 umv/(2307:2609): Cambio al proceso 2
+[INFO] 12:33:01:73 umv/(2307:2609): Cambio al proceso 2
+[INFO] 12:33:02:279 umv/(2307:2609): Cambio al proceso 2
+[INFO] 12:33:03:421 umv/(2307:2609): Cambio al proceso 2
+[INFO] 12:33:04:566 umv/(2307:2609): Cambio al proceso 2
+[INFO] 12:33:05:670 umv/(2307:2609): Cambio al proceso 2
+[INFO] 12:33:06:773 umv/(2307:2609): Cambio al proceso 2
+[INFO] 12:33:07:980 umv/(2307:2609): Cambio al proceso 2
+[INFO] 12:33:09:84 umv/(2307:2609): Cambio al proceso 2
+[INFO] 12:33:10:228 umv/(2307:2609): Cambio al proceso 2
+[INFO] 12:33:11:434 umv/(2307:2609): Cambio al proceso 2
+[INFO] 12:33:32:518 umv/(2307:2609): Cambio al proceso 2
+[INFO] 12:33:38:602 umv/(2307:2609): Cambio al proceso 2
+[INFO] 12:33:39:686 umv/(2307:2609): Cambio al proceso 2
+[INFO] 12:33:40:870 umv/(2307:2609): Cambio al proceso 2
+[INFO] 12:33:42:34 umv/(2307:2609): Cambio al proceso 2
+[INFO] 12:33:43:182 umv/(2307:2609): Cambio al proceso 2
+[INFO] 12:33:44:321 umv/(2307:2609): Cambio al proceso 2
+[INFO] 12:33:45:465 umv/(2307:2609): Cambio al proceso 2
+[INFO] 12:33:46:565 umv/(2307:2609): Cambio al proceso 2
+[INFO] 12:33:47:689 umv/(2307:2609): Cambio al proceso 2
+[INFO] 12:34:33:773 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 3, tamanio = 672)
+[INFO] 12:34:33:793 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = 1525262424
+[INFO] 12:34:33:794 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 3, tamanio = 73)
+[INFO] 12:34:33:814 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = -1462467490
+[INFO] 12:34:33:814 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 3, tamanio = 300)
+[INFO] 12:34:33:834 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = -1934443093
+[INFO] 12:34:33:835 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 3, tamanio = 208)
+[INFO] 12:34:33:855 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = -523841331
+[INFO] 12:34:33:856 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = 1525262424,offset = 0, tamanio = 672)
+[INFO] 12:34:33:856 umv/(2307:2607): Escribir segmento: contenido: #!/home/utnso/workspace/tp-2014-1c-los-salieris-de-linus/programa/programa
+
+#Respuesta esperada: 1; 1; Hola Mundo!; 3; Bye
+
+function imprimir
+        print $0+1
+end
+
+begin
+variables f,  A,  g
+    A = 	0
+    !compartida = 1+A
+    print !compartida
+    jnz !compartida Siguiente 
+:Proximo
+	
+    f = 8	  
+    g <- doble !compartida
+    io LPT1 20
+    io HDD1 10
+
+    textPrint    Hola Mundo!
+    
+    sumar1 &g		
+    print 		g    
+    
+    sinParam
+    
+end
+
+function sinParam
+	textPrint Bye
+end
+
+#Devolver el doble del
+#primer parametro
+function doble
+variables f
+    f = $0 + $0
+    return f
+end
+
+function sumar1
+	*$0 = 1 + *$0
+end
+
+:Siguiente	
+    imprimir A
+goto Proximo
+imir
+[INFO] 12:34:33:877 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:34:33:878 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = -1462467490,offset = 0, tamanio = 73)
+[INFO] 12:34:33:878 umv/(2307:2607): Escribir segmento: contenido: imprimir
+[INFO] 12:34:33:898 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:34:33:898 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = -523841331,offset = 0, tamanio = 208)
+[INFO] 12:34:33:898 umv/(2307:2607): Escribir segmento: contenido: Ž
+[INFO] 12:34:33:918 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:34:33:940 umv/(2307:2609): Cambio al proceso 3
+[INFO] 12:34:35:66 umv/(2307:2609): Cambio al proceso 3
+[INFO] 12:34:36:169 umv/(2307:2609): Cambio al proceso 3
+[INFO] 12:34:37:272 umv/(2307:2609): Cambio al proceso 3
+[INFO] 12:34:38:393 umv/(2307:2609): Cambio al proceso 3
+[INFO] 12:34:39:496 umv/(2307:2609): Cambio al proceso 3
+[INFO] 12:34:40:702 umv/(2307:2609): Cambio al proceso 3
+[INFO] 12:34:41:841 umv/(2307:2609): Cambio al proceso 3
+[INFO] 12:34:42:984 umv/(2307:2609): Cambio al proceso 3
+[INFO] 12:34:44:87 umv/(2307:2609): Cambio al proceso 3
+[INFO] 12:34:45:191 umv/(2307:2609): Cambio al proceso 3
+[INFO] 12:34:46:400 umv/(2307:2609): Cambio al proceso 3
+[INFO] 12:34:47:504 umv/(2307:2609): Cambio al proceso 3
+[INFO] 12:34:48:648 umv/(2307:2609): Cambio al proceso 3
+[INFO] 12:34:49:854 umv/(2307:2609): Cambio al proceso 3
+[INFO] 12:35:10:938 umv/(2307:2609): Cambio al proceso 3
+[INFO] 12:35:17:22 umv/(2307:2609): Cambio al proceso 3
+[INFO] 12:35:18:107 umv/(2307:2609): Cambio al proceso 3
+[INFO] 12:35:19:292 umv/(2307:2609): Cambio al proceso 3
+[INFO] 12:35:20:455 umv/(2307:2609): Cambio al proceso 3
+[INFO] 12:35:21:599 umv/(2307:2609): Cambio al proceso 3
+[INFO] 12:35:22:741 umv/(2307:2609): Cambio al proceso 3
+[INFO] 12:35:23:887 umv/(2307:2609): Cambio al proceso 3
+[INFO] 12:35:24:989 umv/(2307:2609): Cambio al proceso 3
+[INFO] 12:35:26:114 umv/(2307:2609): Cambio al proceso 3
+[INFO] 12:37:25:941 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 4, tamanio = 672)
+[INFO] 12:37:25:961 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = -1632340325
+[INFO] 12:37:25:961 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 4, tamanio = 73)
+[INFO] 12:37:25:982 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = -2045696940
+[INFO] 12:37:25:982 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 4, tamanio = 300)
+[INFO] 12:37:25:3 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = 495109134
+[INFO] 12:37:25:3 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 4, tamanio = 208)
+[INFO] 12:37:26:23 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = -2042496908
+[INFO] 12:37:26:24 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = -1632340325,offset = 0, tamanio = 672)
+[INFO] 12:37:26:24 umv/(2307:2607): Escribir segmento: contenido: #!/home/utnso/workspace/tp-2014-1c-los-salieris-de-linus/programa/programa
+
+#Respuesta esperada: 1; 1; Hola Mundo!; 3; Bye
+
+function imprimir
+        print $0+1
+end
+
+begin
+variables f,  A,  g
+    A = 	0
+    !compartida = 1+A
+    print !compartida
+    jnz !compartida Siguiente 
+:Proximo
+	
+    f = 8	  
+    g <- doble !compartida
+    io LPT1 20
+    io HDD1 10
+
+    textPrint    Hola Mundo!
+    
+    sumar1 &g		
+    print 		g    
+    
+    sinParam
+    
+end
+
+function sinParam
+	textPrint Bye
+end
+
+#Devolver el doble del
+#primer parametro
+function doble
+variables f
+    f = $0 + $0
+    return f
+end
+
+function sumar1
+	*$0 = 1 + *$0
+end
+
+:Siguiente	
+    imprimir A
+goto Proximo
+imir
+[INFO] 12:37:26:45 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:37:26:45 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = -2045696940,offset = 0, tamanio = 73)
+[INFO] 12:37:26:45 umv/(2307:2607): Escribir segmento: contenido: imprimir
+[INFO] 12:37:26:66 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:37:26:66 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = -2042496908,offset = 0, tamanio = 208)
+[INFO] 12:37:26:66 umv/(2307:2607): Escribir segmento: contenido: Ž
+[INFO] 12:37:26:87 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:37:26:109 umv/(2307:2609): Cambio al proceso 4
+[INFO] 12:37:27:233 umv/(2307:2609): Cambio al proceso 4
+[INFO] 12:37:28:338 umv/(2307:2609): Cambio al proceso 4
+[INFO] 12:37:29:443 umv/(2307:2609): Cambio al proceso 4
+[INFO] 12:37:30:566 umv/(2307:2609): Cambio al proceso 4
+[INFO] 12:37:31:670 umv/(2307:2609): Cambio al proceso 4
+[INFO] 12:37:32:875 umv/(2307:2609): Cambio al proceso 4
+[INFO] 12:37:34:17 umv/(2307:2609): Cambio al proceso 4
+[INFO] 12:37:35:161 umv/(2307:2609): Cambio al proceso 4
+[INFO] 12:37:36:265 umv/(2307:2609): Cambio al proceso 4
+[INFO] 12:37:37:367 umv/(2307:2609): Cambio al proceso 4
+[INFO] 12:37:38:572 umv/(2307:2609): Cambio al proceso 4
+[INFO] 12:37:39:675 umv/(2307:2609): Cambio al proceso 4
+[INFO] 12:37:40:820 umv/(2307:2609): Cambio al proceso 4
+[INFO] 12:37:42:25 umv/(2307:2609): Cambio al proceso 4
+[INFO] 12:38:03:109 umv/(2307:2609): Cambio al proceso 4
+[INFO] 12:38:09:194 umv/(2307:2609): Cambio al proceso 4
+[INFO] 12:38:10:278 umv/(2307:2609): Cambio al proceso 4
+[INFO] 12:38:11:463 umv/(2307:2609): Cambio al proceso 4
+[INFO] 12:38:12:627 umv/(2307:2609): Cambio al proceso 4
+[INFO] 12:38:13:771 umv/(2307:2609): Cambio al proceso 4
+[INFO] 12:38:14:914 umv/(2307:2609): Cambio al proceso 4
+[INFO] 12:38:16:59 umv/(2307:2609): Cambio al proceso 4
+[INFO] 12:38:17:162 umv/(2307:2609): Cambio al proceso 4
+[INFO] 12:38:18:288 umv/(2307:2609): Cambio al proceso 4
+[INFO] 12:39:19:194 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 5, tamanio = 672)
+[INFO] 12:39:19:214 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = -1120013023
+[INFO] 12:39:19:215 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 5, tamanio = 73)
+[INFO] 12:39:19:235 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = -259551780
+[INFO] 12:39:19:235 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 5, tamanio = 300)
+[INFO] 12:39:19:255 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = -571925904
+[INFO] 12:39:19:255 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 5, tamanio = 208)
+[INFO] 12:39:19:276 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = -727594946
+[INFO] 12:39:19:276 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = -1120013023,offset = 0, tamanio = 672)
+[INFO] 12:39:19:276 umv/(2307:2607): Escribir segmento: contenido: #!/home/utnso/workspace/tp-2014-1c-los-salieris-de-linus/programa/programa
+
+#Respuesta esperada: 1; 1; Hola Mundo!; 3; Bye
+
+function imprimir
+        print $0+1
+end
+
+begin
+variables f,  A,  g
+    A = 	0
+    !compartida = 1+A
+    print !compartida
+    jnz !compartida Siguiente 
+:Proximo
+	
+    f = 8	  
+    g <- doble !compartida
+    io LPT1 20
+    io HDD1 10
+
+    textPrint    Hola Mundo!
+    
+    sumar1 &g		
+    print 		g    
+    
+    sinParam
+    
+end
+
+function sinParam
+	textPrint Bye
+end
+
+#Devolver el doble del
+#primer parametro
+function doble
+variables f
+    f = $0 + $0
+    return f
+end
+
+function sumar1
+	*$0 = 1 + *$0
+end
+
+:Siguiente	
+    imprimir A
+goto Proximo
+imir
+[INFO] 12:39:19:296 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:39:19:297 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = -259551780,offset = 0, tamanio = 73)
+[INFO] 12:39:19:297 umv/(2307:2607): Escribir segmento: contenido: imprimir
+[INFO] 12:39:19:318 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:39:19:319 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = -727594946,offset = 0, tamanio = 208)
+[INFO] 12:39:19:319 umv/(2307:2607): Escribir segmento: contenido: Ž
+[INFO] 12:39:19:339 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:39:19:363 umv/(2307:2609): Cambio al proceso 5
+[INFO] 12:39:20:487 umv/(2307:2609): Cambio al proceso 5
+[INFO] 12:39:21:590 umv/(2307:2609): Cambio al proceso 5
+[INFO] 12:39:22:693 umv/(2307:2609): Cambio al proceso 5
+[INFO] 12:39:23:817 umv/(2307:2609): Cambio al proceso 5
+[INFO] 12:39:24:920 umv/(2307:2609): Cambio al proceso 5
+[INFO] 12:39:26:126 umv/(2307:2609): Cambio al proceso 5
+[INFO] 12:39:27:265 umv/(2307:2609): Cambio al proceso 5
+[INFO] 12:39:28:410 umv/(2307:2609): Cambio al proceso 5
+[INFO] 12:39:29:518 umv/(2307:2609): Cambio al proceso 5
+[INFO] 12:39:30:621 umv/(2307:2609): Cambio al proceso 5
+[INFO] 12:39:31:826 umv/(2307:2609): Cambio al proceso 5
+[INFO] 12:39:32:929 umv/(2307:2609): Cambio al proceso 5
+[INFO] 12:39:34:73 umv/(2307:2609): Cambio al proceso 5
+[INFO] 12:39:35:278 umv/(2307:2609): Cambio al proceso 5
+[INFO] 12:39:56:363 umv/(2307:2609): Cambio al proceso 5
+[INFO] 12:40:02:446 umv/(2307:2609): Cambio al proceso 5
+[INFO] 12:40:03:533 umv/(2307:2609): Cambio al proceso 5
+[INFO] 12:40:04:718 umv/(2307:2609): Cambio al proceso 5
+[INFO] 12:40:05:882 umv/(2307:2609): Cambio al proceso 5
+[INFO] 12:40:07:25 umv/(2307:2609): Cambio al proceso 5
+[INFO] 12:40:08:165 umv/(2307:2609): Cambio al proceso 5
+[INFO] 12:40:09:310 umv/(2307:2609): Cambio al proceso 5
+[INFO] 12:40:10:409 umv/(2307:2609): Cambio al proceso 5
+[INFO] 12:40:11:534 umv/(2307:2609): Cambio al proceso 5
+[INFO] 12:41:38:786 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 6, tamanio = 672)
+[INFO] 12:41:38:806 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = -119422399
+[INFO] 12:41:38:806 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 6, tamanio = 73)
+[INFO] 12:41:38:827 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = 593997308
+[INFO] 12:41:38:827 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 6, tamanio = 300)
+[INFO] 12:41:38:848 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = 1593934398
+[INFO] 12:41:38:848 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 6, tamanio = 208)
+[INFO] 12:41:38:869 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = 714589822
+[INFO] 12:41:38:870 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = -119422399,offset = 0, tamanio = 672)
+[INFO] 12:41:38:870 umv/(2307:2607): Escribir segmento: contenido: #!/home/utnso/workspace/tp-2014-1c-los-salieris-de-linus/programa/programa
+
+#Respuesta esperada: 1; 1; Hola Mundo!; 3; Bye
+
+function imprimir
+        print $0+1
+end
+
+begin
+variables f,  A,  g
+    A = 	0
+    !compartida = 1+A
+    print !compartida
+    jnz !compartida Siguiente 
+:Proximo
+	
+    f = 8	  
+    g <- doble !compartida
+    io LPT1 20
+    io HDD1 10
+
+    textPrint    Hola Mundo!
+    
+    sumar1 &g		
+    print 		g    
+    
+    sinParam
+    
+end
+
+function sinParam
+	textPrint Bye
+end
+
+#Devolver el doble del
+#primer parametro
+function doble
+variables f
+    f = $0 + $0
+    return f
+end
+
+function sumar1
+	*$0 = 1 + *$0
+end
+
+:Siguiente	
+    imprimir A
+goto Proximo
+imir
+[INFO] 12:41:38:890 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:41:38:891 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = 593997308,offset = 0, tamanio = 73)
+[INFO] 12:41:38:891 umv/(2307:2607): Escribir segmento: contenido: imprimir
+[INFO] 12:41:38:911 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:41:38:911 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = 714589822,offset = 0, tamanio = 208)
+[INFO] 12:41:38:911 umv/(2307:2607): Escribir segmento: contenido: Ž
+[INFO] 12:41:38:932 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:41:38:953 umv/(2307:2609): Cambio al proceso 6
+[INFO] 12:41:40:76 umv/(2307:2609): Cambio al proceso 6
+[INFO] 12:41:41:179 umv/(2307:2609): Cambio al proceso 6
+[INFO] 12:41:42:283 umv/(2307:2609): Cambio al proceso 6
+[INFO] 12:41:43:406 umv/(2307:2609): Cambio al proceso 6
+[INFO] 12:41:44:510 umv/(2307:2609): Cambio al proceso 6
+[INFO] 12:41:45:715 umv/(2307:2609): Cambio al proceso 6
+[INFO] 12:41:46:857 umv/(2307:2609): Cambio al proceso 6
+[INFO] 12:41:47:1 umv/(2307:2609): Cambio al proceso 6
+[INFO] 12:41:49:104 umv/(2307:2609): Cambio al proceso 6
+[INFO] 12:41:50:208 umv/(2307:2609): Cambio al proceso 6
+[INFO] 12:41:51:414 umv/(2307:2609): Cambio al proceso 6
+[INFO] 12:41:52:522 umv/(2307:2609): Cambio al proceso 6
+[INFO] 12:41:53:666 umv/(2307:2609): Cambio al proceso 6
+[INFO] 12:41:54:872 umv/(2307:2609): Cambio al proceso 6
+[INFO] 12:42:15:957 umv/(2307:2609): Cambio al proceso 6
+[INFO] 12:42:22:41 umv/(2307:2609): Cambio al proceso 6
+[INFO] 12:42:23:125 umv/(2307:2609): Cambio al proceso 6
+[INFO] 12:42:24:310 umv/(2307:2609): Cambio al proceso 6
+[INFO] 12:42:25:474 umv/(2307:2609): Cambio al proceso 6
+[INFO] 12:42:26:618 umv/(2307:2609): Cambio al proceso 6
+[INFO] 12:42:27:761 umv/(2307:2609): Cambio al proceso 6
+[INFO] 12:42:28:907 umv/(2307:2609): Cambio al proceso 6
+[INFO] 12:42:30:9 umv/(2307:2609): Cambio al proceso 6
+[INFO] 12:42:31:132 umv/(2307:2609): Cambio al proceso 6
+[INFO] 12:42:41:999 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 7, tamanio = 65)
+[INFO] 12:42:42:19 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = 1255979498
+[INFO] 12:42:42:19 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 7, tamanio = 300)
+[INFO] 12:42:42:41 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = 2006373227
+[INFO] 12:42:42:42 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 7, tamanio = 40)
+[INFO] 12:42:42:62 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = -1539778673
+[INFO] 12:42:42:63 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = 1255979498,offset = 0, tamanio = 65)
+[INFO] 12:42:42:63 umv/(2307:2607): Escribir segmento: contenido: #!./programa
+begin
+	variables a, b
+	a = 3
+	b = 5
+	a = b + 12
+end
+= 5
+[INFO] 12:42:42:83 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:42:42:83 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = -1539778673,offset = 0, tamanio = 40)
+[INFO] 12:42:42:83 umv/(2307:2607): Escribir segmento: contenido: 
+[INFO] 12:42:42:105 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:42:42:127 umv/(2307:2609): Cambio al proceso 7
+[INFO] 12:42:43:229 umv/(2307:2609): Cambio al proceso 7
+[INFO] 12:42:44:334 umv/(2307:2609): Cambio al proceso 7
+[INFO] 12:42:45:440 umv/(2307:2609): Cambio al proceso 7
+[INFO] 12:42:46:563 umv/(2307:2609): Cambio al proceso 7
+[INFO] 12:43:46:37 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 8, tamanio = 301)
+[INFO] 12:43:46:58 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = 1311397980
+[INFO] 12:43:46:58 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 8, tamanio = 33)
+[INFO] 12:43:46:78 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = 2091926252
+[INFO] 12:43:46:78 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 8, tamanio = 300)
+[INFO] 12:43:46:98 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = 117167163
+[INFO] 12:43:46:98 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 8, tamanio = 112)
+[INFO] 12:43:46:119 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = -860906958
+[INFO] 12:43:46:119 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = 1311397980,offset = 0, tamanio = 301)
+[INFO] 12:43:46:119 umv/(2307:2607): Escribir segmento: contenido: #!./programa
+begin
+variables x
+	x <- fibo 50
+# Esperable: SegFault en el 10mo (40)
+
+#	x <- fibo 8
+#Esperable: 21
+
+	textPrint Solucion:
+		print x
+end
+
+function fibo
+print $0
+	jz $0 return0
+	jz $0-1 return1
+variables a, b
+	a <- fibo $0-1
+	b <- fibo $0-2
+return a+b
+
+:return0
+return 0
+
+:return1
+return 1
+
+
+:retu
+[INFO] 12:43:46:139 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:43:46:139 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = 2091926252,offset = 0, tamanio = 33)
+[INFO] 12:43:46:139 umv/(2307:2607): Escribir segmento: contenido: fibo
+[INFO] 12:43:46:159 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:43:46:160 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = -860906958,offset = 0, tamanio = 112)
+[INFO] 12:43:46:160 umv/(2307:2607): Escribir segmento: contenido: 
+[INFO] 12:43:46:180 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:43:46:200 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:43:47:283 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:43:48:489 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:43:49:629 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:43:50:731 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:43:51:834 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:43:52:958 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:43:54:184 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:43:55:325 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:43:56:428 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:43:57:531 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:43:58:655 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:43:59:881 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:01:22 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:02:125 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:03:229 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:04:352 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:05:580 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:06:721 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:07:825 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:08:929 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:10:52 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:11:281 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:12:421 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:13:525 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:14:628 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:15:752 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:16:979 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:18:121 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:19:225 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:20:328 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:21:451 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:22:676 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:23:817 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:24:920 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:26:24 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:27:149 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:28:374 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:29:517 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:30:620 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:31:723 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:32:847 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:34:75 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:35:217 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:36:320 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:37:424 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:38:548 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:39:773 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:40:914 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:42:17 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:43:120 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:44:243 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:45:468 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:46:609 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:47:712 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:48:815 umv/(2307:2609): Cambio al proceso 8
+[INFO] 12:44:49:918 umv/(2307:2609): Hilo CPU. Segmentation Fault al intentar escribir PID 8, BASE 117167450, TAMANIO 5
+[INFO] 12:46:57:602 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 9, tamanio = 909)
+[INFO] 12:46:57:622 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = -1890284228
+[INFO] 12:46:57:622 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 9, tamanio = 300)
+[INFO] 12:46:57:643 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = 454593004
+[INFO] 12:46:57:643 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 9, tamanio = 88)
+[INFO] 12:46:57:664 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = -1537441829
+[INFO] 12:46:57:664 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = -1890284228,offset = 0, tamanio = 909)
+[INFO] 12:46:57:665 umv/(2307:2607): Escribir segmento: contenido: #!./programa
+begin
+#un vector de 5 posiciones
+variables a, p
+	#Como AnSISOP no soporta parentesis, el operador "*" tiene prioridad maxima
+	
+	#La variable "p" apunta a la variable "a"
+	p = &a
+	#Asigno a la variable "a"
+	a = 19
+
+	#imprimir "*p" es identico a imprimir "a" (sin el *)
+	print *p
+
+	#Si quiero imprimir lo que referencie "p", y sumarle 30
+	print 30+*p
+	#Esto seria como hacer: 30 + *(p)
+	#Que no es lo mismo que:
+	print *p+30
+	#Esto ultimo imprime 30 posiciones desde lo que referencia p
+	#Seria hacer: *(p+30)
+	#Y podria dar fallo de segmento
+
+	#Etas reglas de prioridad solo se aplican con el operador "*"
+	#No con el "&"
+	p = &a+30
+	#Esto asigna a p el valor de la posicion de "a", corrido 30 lugares
+	#osea: &(a) + 30
+	print p
+
+	#Y es identico a hacer
+	p = 30+&a
+	#Que seria como hacer: 30 + &(a)
+	print p
+
+	#No hay forma de hacer algo como: &(a+30)
+	#Pero... para que querriamos hacer eso?
+end
+amos ha
+[INFO] 12:46:57:685 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:46:57:685 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = -1537441829,offset = 0, tamanio = 88)
+[INFO] 12:46:57:686 umv/(2307:2607): Escribir segmento: contenido: .
+[INFO] 12:46:57:706 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:46:57:728 umv/(2307:2609): Cambio al proceso 9
+[INFO] 12:46:58:833 umv/(2307:2609): Cambio al proceso 9
+[INFO] 12:46:59:936 umv/(2307:2609): Cambio al proceso 9
+[INFO] 12:47:01:40 umv/(2307:2609): Cambio al proceso 9
+[INFO] 12:47:02:201 umv/(2307:2609): Cambio al proceso 9
+[INFO] 12:47:03:362 umv/(2307:2609): Cambio al proceso 9
+[INFO] 12:47:04:525 umv/(2307:2609): Cambio al proceso 9
+[INFO] 12:47:05:628 umv/(2307:2609): Cambio al proceso 9
+[INFO] 12:47:06:769 umv/(2307:2609): Cambio al proceso 9
+[INFO] 12:47:07:872 umv/(2307:2609): Cambio al proceso 9
+[INFO] 12:47:09:13 umv/(2307:2609): Cambio al proceso 9
+[INFO] 12:50:06:102 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 10, tamanio = 672)
+[INFO] 12:50:06:123 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = 1209727234
+[INFO] 12:50:06:123 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 10, tamanio = 73)
+[INFO] 12:50:06:143 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = -1153206018
+[INFO] 12:50:06:144 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 10, tamanio = 300)
+[INFO] 12:50:06:164 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = 653934843
+[INFO] 12:50:06:164 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 10, tamanio = 208)
+[INFO] 12:50:06:184 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = -1019552086
+[INFO] 12:50:06:185 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = 1209727234,offset = 0, tamanio = 672)
+[INFO] 12:50:06:185 umv/(2307:2607): Escribir segmento: contenido: #!/home/utnso/workspace/tp-2014-1c-los-salieris-de-linus/programa/programa
+
+#Respuesta esperada: 1; 1; Hola Mundo!; 3; Bye
+
+function imprimir
+        print $0+1
+end
+
+begin
+variables f,  A,  g
+    A = 	0
+    !compartida = 1+A
+    print !compartida
+    jnz !compartida Siguiente 
+:Proximo
+	
+    f = 8	  
+    g <- doble !compartida
+    io LPT1 20
+    io HDD1 10
+
+    textPrint    Hola Mundo!
+    
+    sumar1 &g		
+    print 		g    
+    
+    sinParam
+    
+end
+
+function sinParam
+	textPrint Bye
+end
+
+#Devolver el doble del
+#primer parametro
+function doble
+variables f
+    f = $0 + $0
+    return f
+end
+
+function sumar1
+	*$0 = 1 + *$0
+end
+
+:Siguiente	
+    imprimir A
+goto Proximo
+imir
+[INFO] 12:50:06:205 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:50:06:206 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = -1153206018,offset = 0, tamanio = 73)
+[INFO] 12:50:06:206 umv/(2307:2607): Escribir segmento: contenido: imprimir
+[INFO] 12:50:06:226 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:50:06:226 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = -1019552086,offset = 0, tamanio = 208)
+[INFO] 12:50:06:227 umv/(2307:2607): Escribir segmento: contenido: Ž
+[INFO] 12:50:06:247 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:50:06:269 umv/(2307:2609): Cambio al proceso 10
+[INFO] 12:50:07:393 umv/(2307:2609): Cambio al proceso 10
+[INFO] 12:50:08:496 umv/(2307:2609): Cambio al proceso 10
+[INFO] 12:50:09:600 umv/(2307:2609): Cambio al proceso 10
+[INFO] 12:50:10:721 umv/(2307:2609): Cambio al proceso 10
+[INFO] 12:50:11:825 umv/(2307:2609): Cambio al proceso 10
+[INFO] 12:50:13:30 umv/(2307:2609): Cambio al proceso 10
+[INFO] 12:50:14:169 umv/(2307:2609): Cambio al proceso 10
+[INFO] 12:50:15:314 umv/(2307:2609): Cambio al proceso 10
+[INFO] 12:50:16:417 umv/(2307:2609): Cambio al proceso 10
+[INFO] 12:50:17:520 umv/(2307:2609): Cambio al proceso 10
+[INFO] 12:50:18:728 umv/(2307:2609): Cambio al proceso 10
+[INFO] 12:50:19:832 umv/(2307:2609): Cambio al proceso 10
+[INFO] 12:50:20:977 umv/(2307:2609): Cambio al proceso 10
+[INFO] 12:50:22:183 umv/(2307:2609): Cambio al proceso 10
+[INFO] 12:50:43:267 umv/(2307:2609): Cambio al proceso 10
+[INFO] 12:50:49:350 umv/(2307:2609): Cambio al proceso 10
+[INFO] 12:50:50:437 umv/(2307:2609): Cambio al proceso 10
+[INFO] 12:50:51:623 umv/(2307:2609): Cambio al proceso 10
+[INFO] 12:50:52:788 umv/(2307:2609): Cambio al proceso 10
+[INFO] 12:50:53:933 umv/(2307:2609): Cambio al proceso 10
+[INFO] 12:50:55:77 umv/(2307:2609): Cambio al proceso 10
+[INFO] 12:50:56:222 umv/(2307:2609): Cambio al proceso 10
+[INFO] 12:50:57:321 umv/(2307:2609): Cambio al proceso 10
+[INFO] 12:50:58:447 umv/(2307:2609): Cambio al proceso 10
+[INFO] 12:52:27:167 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 11, tamanio = 672)
+[INFO] 12:52:27:188 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = -1524005381
+[INFO] 12:52:27:188 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 11, tamanio = 73)
+[INFO] 12:52:27:209 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = 1072098769
+[INFO] 12:52:27:209 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 11, tamanio = 300)
+[INFO] 12:52:27:229 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = -1052971003
+[INFO] 12:52:27:230 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 11, tamanio = 208)
+[INFO] 12:52:27:250 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = -946555012
+[INFO] 12:52:27:251 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = -1524005381,offset = 0, tamanio = 672)
+[INFO] 12:52:27:251 umv/(2307:2607): Escribir segmento: contenido: #!/home/utnso/workspace/tp-2014-1c-los-salieris-de-linus/programa/programa
+
+#Respuesta esperada: 1; 1; Hola Mundo!; 3; Bye
+
+function imprimir
+        print $0+1
+end
+
+begin
+variables f,  A,  g
+    A = 	0
+    !compartida = 1+A
+    print !compartida
+    jnz !compartida Siguiente 
+:Proximo
+	
+    f = 8	  
+    g <- doble !compartida
+    io LPT1 20
+    io HDD1 10
+
+    textPrint    Hola Mundo!
+    
+    sumar1 &g		
+    print 		g    
+    
+    sinParam
+    
+end
+
+function sinParam
+	textPrint Bye
+end
+
+#Devolver el doble del
+#primer parametro
+function doble
+variables f
+    f = $0 + $0
+    return f
+end
+
+function sumar1
+	*$0 = 1 + *$0
+end
+
+:Siguiente	
+    imprimir A
+goto Proximo
+imir
+[INFO] 12:52:27:271 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:52:27:271 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = 1072098769,offset = 0, tamanio = 73)
+[INFO] 12:52:27:271 umv/(2307:2607): Escribir segmento: contenido: imprimir
+[INFO] 12:52:27:292 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:52:27:292 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = -946555012,offset = 0, tamanio = 208)
+[INFO] 12:52:27:292 umv/(2307:2607): Escribir segmento: contenido: Ž
+[INFO] 12:52:27:312 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:52:27:334 umv/(2307:2609): Cambio al proceso 11
+[INFO] 12:52:28:460 umv/(2307:2609): Cambio al proceso 11
+[INFO] 12:52:29:563 umv/(2307:2609): Cambio al proceso 11
+[INFO] 12:52:30:667 umv/(2307:2609): Cambio al proceso 11
+[INFO] 12:52:31:793 umv/(2307:2609): Cambio al proceso 11
+[INFO] 12:52:32:897 umv/(2307:2609): Cambio al proceso 11
+[INFO] 12:52:34:103 umv/(2307:2609): Cambio al proceso 11
+[INFO] 12:52:35:246 umv/(2307:2609): Cambio al proceso 11
+[INFO] 12:52:36:392 umv/(2307:2609): Cambio al proceso 11
+[INFO] 12:52:37:496 umv/(2307:2609): Cambio al proceso 11
+[INFO] 12:52:38:599 umv/(2307:2609): Cambio al proceso 11
+[INFO] 12:52:39:805 umv/(2307:2609): Cambio al proceso 11
+[INFO] 12:52:40:908 umv/(2307:2609): Cambio al proceso 11
+[INFO] 12:52:42:51 umv/(2307:2609): Cambio al proceso 11
+[INFO] 12:52:43:256 umv/(2307:2609): Cambio al proceso 11
+[INFO] 12:53:04:340 umv/(2307:2609): Cambio al proceso 11
+[INFO] 12:53:10:425 umv/(2307:2609): Cambio al proceso 11
+[INFO] 12:53:11:513 umv/(2307:2609): Cambio al proceso 11
+[INFO] 12:53:12:697 umv/(2307:2609): Cambio al proceso 11
+[INFO] 12:53:13:863 umv/(2307:2609): Cambio al proceso 11
+[INFO] 12:53:15:8 umv/(2307:2609): Cambio al proceso 11
+[INFO] 12:53:16:150 umv/(2307:2609): Cambio al proceso 11
+[INFO] 12:53:17:297 umv/(2307:2609): Cambio al proceso 11
+[INFO] 12:53:18:398 umv/(2307:2609): Cambio al proceso 11
+[INFO] 12:53:19:522 umv/(2307:2609): Cambio al proceso 11
+[INFO] 12:55:09:36 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 12, tamanio = 672)
+[INFO] 12:55:09:57 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = 265839989
+[INFO] 12:55:09:57 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 12, tamanio = 73)
+[INFO] 12:55:09:78 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = -1470032450
+[INFO] 12:55:09:78 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 12, tamanio = 300)
+[INFO] 12:55:09:99 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = -369521527
+[INFO] 12:55:09:100 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 12, tamanio = 208)
+[INFO] 12:55:09:121 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = 649834332
+[INFO] 12:55:09:122 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = 265839989,offset = 0, tamanio = 672)
+[INFO] 12:55:09:122 umv/(2307:2607): Escribir segmento: contenido: #!/home/utnso/workspace/tp-2014-1c-los-salieris-de-linus/programa/programa
+
+#Respuesta esperada: 1; 1; Hola Mundo!; 3; Bye
+
+function imprimir
+        print $0+1
+end
+
+begin
+variables f,  A,  g
+    A = 	0
+    !compartida = 1+A
+    print !compartida
+    jnz !compartida Siguiente 
+:Proximo
+	
+    f = 8	  
+    g <- doble !compartida
+    io LPT1 20
+    io HDD1 10
+
+    textPrint    Hola Mundo!
+    
+    sumar1 &g		
+    print 		g    
+    
+    sinParam
+    
+end
+
+function sinParam
+	textPrint Bye
+end
+
+#Devolver el doble del
+#primer parametro
+function doble
+variables f
+    f = $0 + $0
+    return f
+end
+
+function sumar1
+	*$0 = 1 + *$0
+end
+
+:Siguiente	
+    imprimir A
+goto Proximo
+imir
+[INFO] 12:55:09:142 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:55:09:143 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = -1470032450,offset = 0, tamanio = 73)
+[INFO] 12:55:09:143 umv/(2307:2607): Escribir segmento: contenido: imprimir
+[INFO] 12:55:09:164 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:55:09:165 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = 649834332,offset = 0, tamanio = 208)
+[INFO] 12:55:09:165 umv/(2307:2607): Escribir segmento: contenido: Ž
+[INFO] 12:55:09:185 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:55:09:208 umv/(2307:2609): Cambio al proceso 12
+[INFO] 12:55:10:333 umv/(2307:2609): Cambio al proceso 12
+[INFO] 12:55:11:436 umv/(2307:2609): Cambio al proceso 12
+[INFO] 12:55:12:539 umv/(2307:2609): Cambio al proceso 12
+[INFO] 12:55:13:661 umv/(2307:2609): Cambio al proceso 12
+[INFO] 12:55:14:765 umv/(2307:2609): Cambio al proceso 12
+[INFO] 12:55:15:972 umv/(2307:2609): Cambio al proceso 12
+[INFO] 12:55:17:114 umv/(2307:2609): Cambio al proceso 12
+[INFO] 12:55:18:258 umv/(2307:2609): Cambio al proceso 12
+[INFO] 12:55:19:362 umv/(2307:2609): Cambio al proceso 12
+[INFO] 12:55:20:465 umv/(2307:2609): Cambio al proceso 12
+[INFO] 12:55:21:670 umv/(2307:2609): Cambio al proceso 12
+[INFO] 12:55:22:774 umv/(2307:2609): Cambio al proceso 12
+[INFO] 12:55:23:923 umv/(2307:2609): Cambio al proceso 12
+[INFO] 12:55:25:128 umv/(2307:2609): Cambio al proceso 12
+[INFO] 12:55:33:962 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 13, tamanio = 672)
+[INFO] 12:55:33:982 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = 1016706728
+[INFO] 12:55:33:982 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 13, tamanio = 73)
+[INFO] 12:55:33:3 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = 1083553295
+[INFO] 12:55:33:3 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 13, tamanio = 300)
+[INFO] 12:55:34:23 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = 904615857
+[INFO] 12:55:34:24 umv/(2307:2607): HILO KERNEL: Intento por crear segmento(pid = 13, tamanio = 208)
+[INFO] 12:55:34:44 umv/(2307:2607): HILO KERNEL. Nuevo segmento: base otorgada = 1353966833
+[INFO] 12:55:34:45 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = 1016706728,offset = 0, tamanio = 672)
+[INFO] 12:55:34:45 umv/(2307:2607): Escribir segmento: contenido: #!/home/utnso/workspace/tp-2014-1c-los-salieris-de-linus/programa/programa
+
+#Respuesta esperada: 1; 1; Hola Mundo!; 3; Bye
+
+function imprimir
+        print $0+1
+end
+
+begin
+variables f,  A,  g
+    A = 	0
+    !compartida = 1+A
+    print !compartida
+    jnz !compartida Siguiente 
+:Proximo
+	
+    f = 8	  
+    g <- doble !compartida
+    io LPT1 20
+    io HDD1 10
+
+    textPrint    Hola Mundo!
+    
+    sumar1 &g		
+    print 		g    
+    
+    sinParam
+    
+end
+
+function sinParam
+	textPrint Bye
+end
+
+#Devolver el doble del
+#primer parametro
+function doble
+variables f
+    f = $0 + $0
+    return f
+end
+
+function sumar1
+	*$0 = 1 + *$0
+end
+
+:Siguiente	
+    imprimir A
+goto Proximo
+imir
+[INFO] 12:55:34:66 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:55:34:67 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = 1083553295,offset = 0, tamanio = 73)
+[INFO] 12:55:34:67 umv/(2307:2607): Escribir segmento: contenido: imprimir
+[INFO] 12:55:34:87 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:55:34:88 umv/(2307:2607): HILO KERNEL. Intento por escribir segmento(base = 1353966833,offset = 0, tamanio = 208)
+[INFO] 12:55:34:88 umv/(2307:2607): Escribir segmento: contenido: Ž
+[INFO] 12:55:34:108 umv/(2307:2607): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:55:34:130 umv/(2307:2609): Cambio al proceso 13
+[INFO] 12:55:35:255 umv/(2307:2609): Cambio al proceso 13
+[INFO] 12:55:36:359 umv/(2307:2609): Cambio al proceso 13
+[INFO] 12:55:37:466 umv/(2307:2609): Cambio al proceso 13
+[INFO] 12:55:38:586 umv/(2307:2609): Cambio al proceso 13
+[INFO] 12:55:39:690 umv/(2307:2609): Cambio al proceso 13
+[INFO] 12:55:40:897 umv/(2307:2609): Cambio al proceso 13
+[INFO] 12:55:42:42 umv/(2307:2609): Cambio al proceso 13
+[INFO] 12:55:43:190 umv/(2307:2609): Cambio al proceso 13
+[INFO] 12:55:44:293 umv/(2307:2609): Cambio al proceso 13
+[INFO] 12:55:45:397 umv/(2307:2609): Cambio al proceso 13
+[INFO] 12:57:17:0 umv/(2307:2307): Kernel conectado
+[INFO] 12:57:23:106 umv/(2307:2307): CPU 8 conectada
+[INFO] 12:57:23:106 umv/(2307:2760): 
+CPU 8 conectado
+
+[INFO] 12:57:28:746 umv/(2307:2758): HILO KERNEL: Intento por crear segmento(pid = 1, tamanio = 672)
+[INFO] 12:57:28:766 umv/(2307:2758): HILO KERNEL. Nuevo segmento: base otorgada = 1575976453
+[INFO] 12:57:28:767 umv/(2307:2758): HILO KERNEL: Intento por crear segmento(pid = 1, tamanio = 73)
+[INFO] 12:57:28:787 umv/(2307:2758): HILO KERNEL. Nuevo segmento: base otorgada = -1090515977
+[INFO] 12:57:28:788 umv/(2307:2758): HILO KERNEL: Intento por crear segmento(pid = 1, tamanio = 300)
+[INFO] 12:57:28:808 umv/(2307:2758): HILO KERNEL. Nuevo segmento: base otorgada = -358513431
+[INFO] 12:57:28:809 umv/(2307:2758): HILO KERNEL: Intento por crear segmento(pid = 1, tamanio = 208)
+[INFO] 12:57:28:829 umv/(2307:2758): HILO KERNEL. Nuevo segmento: base otorgada = 182813242
+[INFO] 12:57:28:829 umv/(2307:2758): HILO KERNEL. Intento por escribir segmento(base = 1575976453,offset = 0, tamanio = 672)
+[INFO] 12:57:28:830 umv/(2307:2758): Escribir segmento: contenido: #!/home/utnso/workspace/tp-2014-1c-los-salieris-de-linus/programa/programa
+
+#Respuesta esperada: 1; 1; Hola Mundo!; 3; Bye
+
+function imprimir
+        print $0+1
+end
+
+begin
+variables f,  A,  g
+    A = 	0
+    !compartida = 1+A
+    print !compartida
+    jnz !compartida Siguiente 
+:Proximo
+	
+    f = 8	  
+    g <- doble !compartida
+    io LPT1 20
+    io HDD1 10
+
+    textPrint    Hola Mundo!
+    
+    sumar1 &g		
+    print 		g    
+    
+    sinParam
+    
+end
+
+function sinParam
+	textPrint Bye
+end
+
+#Devolver el doble del
+#primer parametro
+function doble
+variables f
+    f = $0 + $0
+    return f
+end
+
+function sumar1
+	*$0 = 1 + *$0
+end
+
+:Siguiente	
+    imprimir A
+goto Proximo
+imir
+[INFO] 12:57:28:851 umv/(2307:2758): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:57:28:852 umv/(2307:2758): HILO KERNEL. Intento por escribir segmento(base = -1090515977,offset = 0, tamanio = 73)
+[INFO] 12:57:28:852 umv/(2307:2758): Escribir segmento: contenido: imprimir
+[INFO] 12:57:28:872 umv/(2307:2758): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:57:28:872 umv/(2307:2758): HILO KERNEL. Intento por escribir segmento(base = 182813242,offset = 0, tamanio = 208)
+[INFO] 12:57:28:872 umv/(2307:2758): Escribir segmento: contenido: Ž
+[INFO] 12:57:28:893 umv/(2307:2758): HILO KERNEL. Segmento escrito correctamente
+[INFO] 12:57:28:914 umv/(2307:2760): Cambio al proceso 1
+[INFO] 12:57:30:38 umv/(2307:2760): Cambio al proceso 1
+[INFO] 12:57:31:142 umv/(2307:2760): Cambio al proceso 1
+[INFO] 12:57:32:245 umv/(2307:2760): Cambio al proceso 1
+[INFO] 12:57:33:365 umv/(2307:2760): Cambio al proceso 1
+[INFO] 12:57:34:469 umv/(2307:2760): Cambio al proceso 1
+[INFO] 12:57:35:673 umv/(2307:2760): Cambio al proceso 1
+[INFO] 12:57:36:818 umv/(2307:2760): Cambio al proceso 1
+[INFO] 12:57:37:962 umv/(2307:2760): Cambio al proceso 1
+[INFO] 12:57:39:66 umv/(2307:2760): Cambio al proceso 1
+[INFO] 12:57:40:171 umv/(2307:2760): Cambio al proceso 1
+[INFO] 12:57:41:376 umv/(2307:2760): Cambio al proceso 1
+[INFO] 12:57:42:481 umv/(2307:2760): Cambio al proceso 1
+[INFO] 12:57:43:625 umv/(2307:2760): Cambio al proceso 1
+[INFO] 12:57:44:830 umv/(2307:2760): Cambio al proceso 1
+[INFO] 12:58:05:913 umv/(2307:2760): Cambio al proceso 1
+[INFO] 12:58:11:997 umv/(2307:2760): Cambio al proceso 1
+[INFO] 12:58:13:81 umv/(2307:2760): Cambio al proceso 1
+[INFO] 12:58:14:265 umv/(2307:2760): Cambio al proceso 1
+[INFO] 12:58:15:430 umv/(2307:2760): Cambio al proceso 1
+[INFO] 12:58:16:574 umv/(2307:2760): Cambio al proceso 1
+[INFO] 12:58:17:713 umv/(2307:2760): Cambio al proceso 1
+[INFO] 12:58:18:857 umv/(2307:2760): Cambio al proceso 1
+[INFO] 12:58:19:959 umv/(2307:2760): Cambio al proceso 1
+[INFO] 12:58:21:83 umv/(2307:2760): Cambio al proceso 1
+[INFO] 13:09:19:480 umv/(2307:2307): Kernel conectado
+[INFO] 13:09:22:683 umv/(2307:2307): CPU 9 conectada
+[INFO] 13:09:22:683 umv/(2307:2844): 
+CPU 9 conectado
+
+[INFO] 13:09:36:338 umv/(2307:2842): HILO KERNEL: Intento por crear segmento(pid = 1, tamanio = 301)
+[INFO] 13:09:36:359 umv/(2307:2842): HILO KERNEL. Nuevo segmento: base otorgada = 1879805898
+[INFO] 13:09:36:359 umv/(2307:2842): HILO KERNEL: Intento por crear segmento(pid = 1, tamanio = 33)
+[INFO] 13:09:36:379 umv/(2307:2842): HILO KERNEL. Nuevo segmento: base otorgada = 2144357067
+[INFO] 13:09:36:379 umv/(2307:2842): HILO KERNEL: Intento por crear segmento(pid = 1, tamanio = 300)
+[INFO] 13:09:36:400 umv/(2307:2842): HILO KERNEL. Nuevo segmento: base otorgada = 38220104
+[INFO] 13:09:36:400 umv/(2307:2842): HILO KERNEL: Intento por crear segmento(pid = 1, tamanio = 112)
+[INFO] 13:09:36:420 umv/(2307:2842): HILO KERNEL. Nuevo segmento: base otorgada = -1765980316
+[INFO] 13:09:36:421 umv/(2307:2842): HILO KERNEL. Intento por escribir segmento(base = 1879805898,offset = 0, tamanio = 301)
+[INFO] 13:09:36:421 umv/(2307:2842): Escribir segmento: contenido: #!./programa
+begin
+variables x
+	x <- fibo 50
+# Esperable: SegFault en el 10mo (40)
+
+#	x <- fibo 8
+#Esperable: 21
+
+	textPrint Solucion:
+		print x
+end
+
+function fibo
+print $0
+	jz $0 return0
+	jz $0-1 return1
+variables a, b
+	a <- fibo $0-1
+	b <- fibo $0-2
+return a+b
+
+:return0
+return 0
+
+:return1
+return 1
+
+
+:retu
+[INFO] 13:09:36:441 umv/(2307:2842): HILO KERNEL. Segmento escrito correctamente
+[INFO] 13:09:36:442 umv/(2307:2842): HILO KERNEL. Intento por escribir segmento(base = 2144357067,offset = 0, tamanio = 33)
+[INFO] 13:09:36:442 umv/(2307:2842): Escribir segmento: contenido: fibo
+[INFO] 13:09:36:463 umv/(2307:2842): HILO KERNEL. Segmento escrito correctamente
+[INFO] 13:09:36:463 umv/(2307:2842): HILO KERNEL. Intento por escribir segmento(base = -1765980316,offset = 0, tamanio = 112)
+[INFO] 13:09:36:463 umv/(2307:2842): Escribir segmento: contenido: 
+[INFO] 13:09:36:483 umv/(2307:2842): HILO KERNEL. Segmento escrito correctamente
+[INFO] 13:09:36:504 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:09:37:587 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:09:38:792 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:09:39:935 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:09:41:39 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:09:42:145 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:09:43:269 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:09:44:495 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:09:45:637 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:09:46:742 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:09:47:845 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:09:48:968 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:09:50:193 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:09:51:333 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:09:52:436 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:09:53:542 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:09:54:666 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:09:55:891 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:09:57:33 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:09:58:136 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:09:59:241 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:00:365 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:01:590 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:02:733 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:03:837 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:04:943 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:06:67 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:07:292 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:08:433 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:09:535 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:10:639 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:11:763 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:12:990 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:14:132 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:15:234 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:16:338 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:17:462 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:18:687 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:19:830 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:20:933 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:22:37 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:23:161 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:24:387 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:25:529 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:26:633 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:27:736 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:28:861 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:30:87 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:31:229 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:32:332 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:33:436 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:34:564 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:35:791 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:36:933 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:38:36 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:39:141 umv/(2307:2844): Cambio al proceso 1
+[INFO] 13:10:40:243 umv/(2307:2844): Hilo CPU. Segmentation Fault al intentar escribir PID 1, BASE 38220391, TAMANIO 5
+[INFO] 13:10:47:750 umv/(2307:2842): HILO KERNEL: Intento por crear segmento(pid = 2, tamanio = 672)
+[INFO] 13:10:47:771 umv/(2307:2842): HILO KERNEL. Nuevo segmento: base otorgada = 1562579487
+[INFO] 13:10:47:772 umv/(2307:2842): HILO KERNEL: Intento por crear segmento(pid = 2, tamanio = 73)
+[INFO] 13:10:47:792 umv/(2307:2842): HILO KERNEL. Nuevo segmento: base otorgada = -1633140962
+[INFO] 13:10:47:793 umv/(2307:2842): HILO KERNEL: Intento por crear segmento(pid = 2, tamanio = 300)
+[INFO] 13:10:47:813 umv/(2307:2842): HILO KERNEL. Nuevo segmento: base otorgada = -293910756
+[INFO] 13:10:47:813 umv/(2307:2842): HILO KERNEL: Intento por crear segmento(pid = 2, tamanio = 208)
+[INFO] 13:10:47:833 umv/(2307:2842): HILO KERNEL. Nuevo segmento: base otorgada = -37370524
+[INFO] 13:10:47:833 umv/(2307:2842): HILO KERNEL. Intento por escribir segmento(base = 1562579487,offset = 0, tamanio = 672)
+[INFO] 13:10:47:833 umv/(2307:2842): Escribir segmento: contenido: #!/home/utnso/workspace/tp-2014-1c-los-salieris-de-linus/programa/programa
+
+#Respuesta esperada: 1; 1; Hola Mundo!; 3; Bye
+
+function imprimir
+        print $0+1
+end
+
+begin
+variables f,  A,  g
+    A = 	0
+    !compartida = 1+A
+    print !compartida
+    jnz !compartida Siguiente 
+:Proximo
+	
+    f = 8	  
+    g <- doble !compartida
+    io LPT1 20
+    io HDD1 10
+
+    textPrint    Hola Mundo!
+    
+    sumar1 &g		
+    print 		g    
+    
+    sinParam
+    
+end
+
+function sinParam
+	textPrint Bye
+end
+
+#Devolver el doble del
+#primer parametro
+function doble
+variables f
+    f = $0 + $0
+    return f
+end
+
+function sumar1
+	*$0 = 1 + *$0
+end
+
+:Siguiente	
+    imprimir A
+goto Proximo
+imir
+[INFO] 13:10:47:853 umv/(2307:2842): HILO KERNEL. Segmento escrito correctamente
+[INFO] 13:10:47:854 umv/(2307:2842): HILO KERNEL. Intento por escribir segmento(base = -1633140962,offset = 0, tamanio = 73)
+[INFO] 13:10:47:854 umv/(2307:2842): Escribir segmento: contenido: imprimir
+[INFO] 13:10:47:874 umv/(2307:2842): HILO KERNEL. Segmento escrito correctamente
+[INFO] 13:10:47:875 umv/(2307:2842): HILO KERNEL. Intento por escribir segmento(base = -37370524,offset = 0, tamanio = 208)
+[INFO] 13:10:47:875 umv/(2307:2842): Escribir segmento: contenido: Ž
+[INFO] 13:10:47:895 umv/(2307:2842): HILO KERNEL. Segmento escrito correctamente
+[INFO] 13:10:47:916 umv/(2307:2844): Cambio al proceso 2
+[INFO] 13:10:49:40 umv/(2307:2844): Cambio al proceso 2
+[INFO] 13:10:50:142 umv/(2307:2844): Cambio al proceso 2
+[INFO] 13:10:51:246 umv/(2307:2844): Cambio al proceso 2
+[INFO] 13:10:52:369 umv/(2307:2844): Cambio al proceso 2
+[INFO] 13:10:53:475 umv/(2307:2844): Cambio al proceso 2
+[INFO] 13:10:54:681 umv/(2307:2844): Cambio al proceso 2
+[INFO] 13:10:55:821 umv/(2307:2844): Cambio al proceso 2
+[INFO] 13:10:56:965 umv/(2307:2844): Cambio al proceso 2
+[INFO] 13:10:58:69 umv/(2307:2844): Cambio al proceso 2
+[INFO] 13:10:59:173 umv/(2307:2844): Cambio al proceso 2
+[INFO] 13:11:00:378 umv/(2307:2844): Cambio al proceso 2
+[INFO] 13:11:01:483 umv/(2307:2844): Cambio al proceso 2
+[INFO] 13:11:02:631 umv/(2307:2844): Cambio al proceso 2
+[INFO] 13:11:03:836 umv/(2307:2844): Cambio al proceso 2
+[INFO] 13:11:24:920 umv/(2307:2844): Cambio al proceso 2
+[INFO] 13:11:30:4 umv/(2307:2844): Cambio al proceso 2
+[INFO] 13:11:32:89 umv/(2307:2844): Cambio al proceso 2
+[INFO] 13:11:33:275 umv/(2307:2844): Cambio al proceso 2
+[INFO] 13:11:34:439 umv/(2307:2844): Cambio al proceso 2
+[INFO] 13:11:35:586 umv/(2307:2844): Cambio al proceso 2
+[INFO] 13:11:36:725 umv/(2307:2844): Cambio al proceso 2
+[INFO] 13:11:37:870 umv/(2307:2844): Cambio al proceso 2
+[INFO] 13:11:38:969 umv/(2307:2844): Cambio al proceso 2
+[INFO] 13:11:40:93 umv/(2307:2844): Cambio al proceso 2
+[INFO] 13:56:45:195 umv/(2933:2933): Configuracion leida y cargada
+[INFO] 13:56:45:195 umv/(2933:2933): Se reservo el espacio inicial de 5000 bytes
+[INFO] 13:56:45:195 umv/(2933:2933): Se inicializo los semaforos
+[INFO] 13:56:45:195 umv/(2933:2933): Inicio la ejecucion de la consola
+[INFO] 13:56:45:195 umv/(2933:2933): Socket en escucha creado en el puerto 8887
+[INFO] 13:56:48:568 umv/(2933:2933): Kernel conectado
+[INFO] 13:56:50:931 umv/(2933:2933): CPU 1 conectada
+[INFO] 13:56:50:932 umv/(2933:2942): 
+CPU 1 conectado
+
+[INFO] 13:56:54:662 umv/(2933:2940): HILO KERNEL: Intento por crear segmento(pid = 1, tamanio = 672)
+[INFO] 13:56:54:683 umv/(2933:2940): HILO KERNEL. Nuevo segmento: base otorgada = 600196455
+[INFO] 13:56:54:683 umv/(2933:2940): HILO KERNEL: Intento por crear segmento(pid = 1, tamanio = 73)
+[INFO] 13:56:54:703 umv/(2933:2940): HILO KERNEL. Nuevo segmento: base otorgada = 1215535209
+[INFO] 13:56:54:704 umv/(2933:2940): HILO KERNEL: Intento por crear segmento(pid = 1, tamanio = 300)
+[INFO] 13:56:54:724 umv/(2933:2940): HILO KERNEL. Nuevo segmento: base otorgada = 1560271953
+[INFO] 13:56:54:725 umv/(2933:2940): HILO KERNEL: Intento por crear segmento(pid = 1, tamanio = 208)
+[INFO] 13:56:54:745 umv/(2933:2940): HILO KERNEL. Nuevo segmento: base otorgada = 1491899466
+[INFO] 13:56:54:745 umv/(2933:2940): HILO KERNEL. Intento por escribir segmento(base = 600196455,offset = 0, tamanio = 672)
+[INFO] 13:56:54:745 umv/(2933:2940): Escribir segmento: contenido: #!/home/utnso/workspace/tp-2014-1c-los-salieris-de-linus/programa/programa
+
+#Respuesta esperada: 1; 1; Hola Mundo!; 3; Bye
+
+function imprimir
+        print $0+1
+end
+
+begin
+variables f,  A,  g
+    A = 	0
+    !compartida = 1+A
+    print !compartida
+    jnz !compartida Siguiente 
+:Proximo
+	
+    f = 8	  
+    g <- doble !compartida
+    io LPT1 20
+    io HDD1 10
+
+    textPrint    Hola Mundo!
+    
+    sumar1 &g		
+    print 		g    
+    
+    sinParam
+    
+end
+
+function sinParam
+	textPrint Bye
+end
+
+#Devolver el doble del
+#primer parametro
+function doble
+variables f
+    f = $0 + $0
+    return f
+end
+
+function sumar1
+	*$0 = 1 + *$0
+end
+
+:Siguiente	
+    imprimir A
+goto Proximo
+imir
+[INFO] 13:56:54:766 umv/(2933:2940): HILO KERNEL. Segmento escrito correctamente
+[INFO] 13:56:54:766 umv/(2933:2940): HILO KERNEL. Intento por escribir segmento(base = 1215535209,offset = 0, tamanio = 73)
+[INFO] 13:56:54:766 umv/(2933:2940): Escribir segmento: contenido: imprimir
+[INFO] 13:56:54:787 umv/(2933:2940): HILO KERNEL. Segmento escrito correctamente
+[INFO] 13:56:54:787 umv/(2933:2940): HILO KERNEL. Intento por escribir segmento(base = 1491899466,offset = 0, tamanio = 208)
+[INFO] 13:56:54:787 umv/(2933:2940): Escribir segmento: contenido: Ž
+[INFO] 13:56:54:808 umv/(2933:2940): HILO KERNEL. Segmento escrito correctamente
+[INFO] 13:56:54:830 umv/(2933:2942): Cambio al proceso 1
+[INFO] 13:56:55:957 umv/(2933:2942): Cambio al proceso 1
+[INFO] 13:56:57:63 umv/(2933:2942): Cambio al proceso 1
+[INFO] 13:56:58:168 umv/(2933:2942): Cambio al proceso 1
+[INFO] 13:56:59:289 umv/(2933:2942): Cambio al proceso 1
+[INFO] 13:57:00:394 umv/(2933:2942): Cambio al proceso 1
+[INFO] 13:57:01:599 umv/(2933:2942): Cambio al proceso 1
+[INFO] 13:57:02:741 umv/(2933:2942): Cambio al proceso 1
+[INFO] 13:57:03:884 umv/(2933:2942): Cambio al proceso 1
+[INFO] 13:57:04:989 umv/(2933:2942): Cambio al proceso 1
+[INFO] 13:57:06:92 umv/(2933:2942): Cambio al proceso 1
+[INFO] 13:57:07:299 umv/(2933:2942): Cambio al proceso 1
+[INFO] 13:57:08:403 umv/(2933:2942): Cambio al proceso 1
+[INFO] 13:57:09:548 umv/(2933:2942): Cambio al proceso 1
+[INFO] 13:57:10:754 umv/(2933:2942): Cambio al proceso 1
+[INFO] 13:57:31:841 umv/(2933:2942): Cambio al proceso 1
+[INFO] 13:57:37:925 umv/(2933:2942): Cambio al proceso 1
+[INFO] 13:57:39:8 umv/(2933:2942): Cambio al proceso 1
+[INFO] 13:57:40:192 umv/(2933:2942): Cambio al proceso 1
+[INFO] 13:57:41:357 umv/(2933:2942): Cambio al proceso 1
+[INFO] 13:57:42:505 umv/(2933:2942): Cambio al proceso 1
+[INFO] 13:57:43:645 umv/(2933:2942): Cambio al proceso 1
+[INFO] 13:57:44:791 umv/(2933:2942): Cambio al proceso 1
+[INFO] 13:57:45:889 umv/(2933:2942): Cambio al proceso 1
+[INFO] 13:57:47:15 umv/(2933:2942): Cambio al proceso 1
+[INFO] 13:58:15:503 umv/(2933:2940): HILO KERNEL: Intento por crear segmento(pid = 2, tamanio = 672)
+[INFO] 13:58:15:523 umv/(2933:2940): HILO KERNEL. Nuevo segmento: base otorgada = 2093817641
+[INFO] 13:58:15:524 umv/(2933:2940): HILO KERNEL: Intento por crear segmento(pid = 2, tamanio = 73)
+[INFO] 13:58:15:544 umv/(2933:2940): HILO KERNEL. Nuevo segmento: base otorgada = -676636486
+[INFO] 13:58:15:545 umv/(2933:2940): HILO KERNEL: Intento por crear segmento(pid = 2, tamanio = 300)
+[INFO] 13:58:15:565 umv/(2933:2940): HILO KERNEL. Nuevo segmento: base otorgada = 519782898
+[INFO] 13:58:15:565 umv/(2933:2940): HILO KERNEL: Intento por crear segmento(pid = 2, tamanio = 208)
+[INFO] 13:58:15:586 umv/(2933:2940): HILO KERNEL. Nuevo segmento: base otorgada = -515462685
+[INFO] 13:58:15:586 umv/(2933:2940): HILO KERNEL. Intento por escribir segmento(base = 2093817641,offset = 0, tamanio = 672)
+[INFO] 13:58:15:587 umv/(2933:2940): Escribir segmento: contenido: #!/home/utnso/workspace/tp-2014-1c-los-salieris-de-linus/programa/programa
+
+#Respuesta esperada: 1; 1; Hola Mundo!; 3; Bye
+
+function imprimir
+        print $0+1
+end
+
+begin
+variables f,  A,  g
+    A = 	0
+    !compartida = 1+A
+    print !compartida
+    jnz !compartida Siguiente 
+:Proximo
+	
+    f = 8	  
+    g <- doble !compartida
+    io LPT1 20
+    io HDD1 10
+
+    textPrint    Hola Mundo!
+    
+    sumar1 &g		
+    print 		g    
+    
+    sinParam
+    
+end
+
+function sinParam
+	textPrint Bye
+end
+
+#Devolver el doble del
+#primer parametro
+function doble
+variables f
+    f = $0 + $0
+    return f
+end
+
+function sumar1
+	*$0 = 1 + *$0
+end
+
+:Siguiente	
+    imprimir A
+goto Proximo
+imir
+[INFO] 13:58:15:607 umv/(2933:2940): HILO KERNEL. Segmento escrito correctamente
+[INFO] 13:58:15:607 umv/(2933:2940): HILO KERNEL. Intento por escribir segmento(base = -676636486,offset = 0, tamanio = 73)
+[INFO] 13:58:15:607 umv/(2933:2940): Escribir segmento: contenido: imprimir
+[INFO] 13:58:15:628 umv/(2933:2940): HILO KERNEL. Segmento escrito correctamente
+[INFO] 13:58:15:628 umv/(2933:2940): HILO KERNEL. Intento por escribir segmento(base = -515462685,offset = 0, tamanio = 208)
+[INFO] 13:58:15:628 umv/(2933:2940): Escribir segmento: contenido: Ž
+[INFO] 13:58:15:648 umv/(2933:2940): HILO KERNEL. Segmento escrito correctamente
+[INFO] 13:58:15:670 umv/(2933:2942): Cambio al proceso 2
+[INFO] 13:58:16:793 umv/(2933:2942): Cambio al proceso 2
+[INFO] 13:58:17:900 umv/(2933:2942): Cambio al proceso 2
+[INFO] 13:58:18:3 umv/(2933:2942): Cambio al proceso 2
+[INFO] 13:58:20:125 umv/(2933:2942): Cambio al proceso 2
+[INFO] 13:58:21:228 umv/(2933:2942): Cambio al proceso 2
+[INFO] 13:58:22:436 umv/(2933:2942): Cambio al proceso 2
+[INFO] 13:58:23:577 umv/(2933:2942): Cambio al proceso 2
+[INFO] 13:58:24:721 umv/(2933:2942): Cambio al proceso 2
+[INFO] 13:58:25:824 umv/(2933:2942): Cambio al proceso 2
+[INFO] 13:58:26:927 umv/(2933:2942): Cambio al proceso 2
+[INFO] 13:58:28:134 umv/(2933:2942): Cambio al proceso 2
+[INFO] 13:58:29:239 umv/(2933:2942): Cambio al proceso 2
+[INFO] 13:58:30:382 umv/(2933:2942): Cambio al proceso 2
+[INFO] 13:58:31:587 umv/(2933:2942): Cambio al proceso 2
+[INFO] 13:58:52:671 umv/(2933:2942): Cambio al proceso 2
+[INFO] 13:58:58:754 umv/(2933:2942): Cambio al proceso 2
+[INFO] 13:58:59:839 umv/(2933:2942): Cambio al proceso 2
+[INFO] 13:59:01:23 umv/(2933:2942): Cambio al proceso 2
+[INFO] 13:59:02:187 umv/(2933:2942): Cambio al proceso 2
+[INFO] 13:59:03:330 umv/(2933:2942): Cambio al proceso 2
+[INFO] 13:59:04:473 umv/(2933:2942): Cambio al proceso 2
+[INFO] 13:59:05:618 umv/(2933:2942): Cambio al proceso 2
+[INFO] 13:59:06:717 umv/(2933:2942): Cambio al proceso 2
+[INFO] 13:59:07:840 umv/(2933:2942): Cambio al proceso 2
+[INFO] 13:59:47:777 umv/(2933:2940): HILO KERNEL: Intento por crear segmento(pid = 3, tamanio = 672)
+[INFO] 13:59:47:797 umv/(2933:2940): HILO KERNEL. Nuevo segmento: base otorgada = 1656881276
+[INFO] 13:59:47:798 umv/(2933:2940): HILO KERNEL: Intento por crear segmento(pid = 3, tamanio = 73)
+[INFO] 13:59:47:818 umv/(2933:2940): HILO KERNEL. Nuevo segmento: base otorgada = 670566484
+[INFO] 13:59:47:818 umv/(2933:2940): HILO KERNEL: Intento por crear segmento(pid = 3, tamanio = 300)
+[INFO] 13:59:47:839 umv/(2933:2940): HILO KERNEL. Nuevo segmento: base otorgada = -370662629
+[INFO] 13:59:47:839 umv/(2933:2940): HILO KERNEL: Intento por crear segmento(pid = 3, tamanio = 208)
+[INFO] 13:59:47:860 umv/(2933:2940): HILO KERNEL. Nuevo segmento: base otorgada = 1133366759
+[INFO] 13:59:47:861 umv/(2933:2940): HILO KERNEL. Intento por escribir segmento(base = 1656881276,offset = 0, tamanio = 672)
+[INFO] 13:59:47:861 umv/(2933:2940): Escribir segmento: contenido: #!/home/utnso/workspace/tp-2014-1c-los-salieris-de-linus/programa/programa
+
+#Respuesta esperada: 1; 1; Hola Mundo!; 3; Bye
+
+function imprimir
+        print $0+1
+end
+
+begin
+variables f,  A,  g
+    A = 	0
+    !compartida = 1+A
+    print !compartida
+    jnz !compartida Siguiente 
+:Proximo
+	
+    f = 8	  
+    g <- doble !compartida
+    io LPT1 20
+    io HDD1 10
+
+    textPrint    Hola Mundo!
+    
+    sumar1 &g		
+    print 		g    
+    
+    sinParam
+    
+end
+
+function sinParam
+	textPrint Bye
+end
+
+#Devolver el doble del
+#primer parametro
+function doble
+variables f
+    f = $0 + $0
+    return f
+end
+
+function sumar1
+	*$0 = 1 + *$0
+end
+
+:Siguiente	
+    imprimir A
+goto Proximo
+imir
+[INFO] 13:59:47:881 umv/(2933:2940): HILO KERNEL. Segmento escrito correctamente
+[INFO] 13:59:47:881 umv/(2933:2940): HILO KERNEL. Intento por escribir segmento(base = 670566484,offset = 0, tamanio = 73)
+[INFO] 13:59:47:881 umv/(2933:2940): Escribir segmento: contenido: imprimir
+[INFO] 13:59:47:901 umv/(2933:2940): HILO KERNEL. Segmento escrito correctamente
+[INFO] 13:59:47:902 umv/(2933:2940): HILO KERNEL. Intento por escribir segmento(base = 1133366759,offset = 0, tamanio = 208)
+[INFO] 13:59:47:902 umv/(2933:2940): Escribir segmento: contenido: Ž
+[INFO] 13:59:47:922 umv/(2933:2940): HILO KERNEL. Segmento escrito correctamente
+[INFO] 13:59:47:942 umv/(2933:2942): Cambio al proceso 3
+[INFO] 13:59:49:67 umv/(2933:2942): Cambio al proceso 3
+[INFO] 13:59:50:171 umv/(2933:2942): Cambio al proceso 3
+[INFO] 13:59:51:274 umv/(2933:2942): Cambio al proceso 3
+[INFO] 13:59:52:397 umv/(2933:2942): Cambio al proceso 3
+[INFO] 13:59:53:499 umv/(2933:2942): Cambio al proceso 3
+[INFO] 13:59:54:706 umv/(2933:2942): Cambio al proceso 3
+[INFO] 13:59:55:845 umv/(2933:2942): Cambio al proceso 3
+[INFO] 13:59:56:993 umv/(2933:2942): Cambio al proceso 3
+[INFO] 13:59:58:98 umv/(2933:2942): Cambio al proceso 3
+[INFO] 13:59:59:200 umv/(2933:2942): Cambio al proceso 3
+[INFO] 14:00:00:406 umv/(2933:2942): Cambio al proceso 3
+[INFO] 14:00:01:510 umv/(2933:2942): Cambio al proceso 3
+[INFO] 14:00:02:654 umv/(2933:2942): Cambio al proceso 3
+[INFO] 14:00:03:859 umv/(2933:2942): Cambio al proceso 3
+[INFO] 14:00:24:943 umv/(2933:2942): Cambio al proceso 3
+[INFO] 14:00:31:27 umv/(2933:2942): Cambio al proceso 3
+[INFO] 14:00:32:111 umv/(2933:2942): Cambio al proceso 3
+[INFO] 14:00:33:296 umv/(2933:2942): Cambio al proceso 3
+[INFO] 14:00:34:460 umv/(2933:2942): Cambio al proceso 3
+[INFO] 14:00:35:605 umv/(2933:2942): Cambio al proceso 3
+[INFO] 14:00:36:746 umv/(2933:2942): Cambio al proceso 3
+[INFO] 14:00:37:891 umv/(2933:2942): Cambio al proceso 3
+[INFO] 14:00:38:993 umv/(2933:2942): Cambio al proceso 3
+[INFO] 14:00:40:117 umv/(2933:2942): Cambio al proceso 3
+[INFO] 14:01:12:921 umv/(2933:2940): HILO KERNEL: Intento por crear segmento(pid = 4, tamanio = 301)
+[INFO] 14:01:12:941 umv/(2933:2940): HILO KERNEL. Nuevo segmento: base otorgada = 626659190
+[INFO] 14:01:12:941 umv/(2933:2940): HILO KERNEL: Intento por crear segmento(pid = 4, tamanio = 33)
+[INFO] 14:01:12:961 umv/(2933:2940): HILO KERNEL. Nuevo segmento: base otorgada = 1919154478
+[INFO] 14:01:12:961 umv/(2933:2940): HILO KERNEL: Intento por crear segmento(pid = 4, tamanio = 300)
+[INFO] 14:01:12:982 umv/(2933:2940): HILO KERNEL. Nuevo segmento: base otorgada = -677395917
+[INFO] 14:01:12:982 umv/(2933:2940): HILO KERNEL: Intento por crear segmento(pid = 4, tamanio = 112)
+[INFO] 14:01:13:3 umv/(2933:2940): HILO KERNEL. Nuevo segmento: base otorgada = 127583433
+[INFO] 14:01:13:3 umv/(2933:2940): HILO KERNEL. Intento por escribir segmento(base = 626659190,offset = 0, tamanio = 301)
+[INFO] 14:01:13:3 umv/(2933:2940): Escribir segmento: contenido: #!./programa
+begin
+variables x
+	x <- fibo 50
+# Esperable: SegFault en el 10mo (40)
+
+#	x <- fibo 8
+#Esperable: 21
+
+	textPrint Solucion:
+		print x
+end
+
+function fibo
+print $0
+	jz $0 return0
+	jz $0-1 return1
+variables a, b
+	a <- fibo $0-1
+	b <- fibo $0-2
+return a+b
+
+:return0
+return 0
+
+:return1
+return 1
+
+
+:retu
+[INFO] 14:01:13:23 umv/(2933:2940): HILO KERNEL. Segmento escrito correctamente
+[INFO] 14:01:13:24 umv/(2933:2940): HILO KERNEL. Intento por escribir segmento(base = 1919154478,offset = 0, tamanio = 33)
+[INFO] 14:01:13:24 umv/(2933:2940): Escribir segmento: contenido: fibo
+[INFO] 14:01:13:44 umv/(2933:2940): HILO KERNEL. Segmento escrito correctamente
+[INFO] 14:01:13:45 umv/(2933:2940): HILO KERNEL. Intento por escribir segmento(base = 127583433,offset = 0, tamanio = 112)
+[INFO] 14:01:13:45 umv/(2933:2940): Escribir segmento: contenido: 
+[INFO] 14:01:13:66 umv/(2933:2940): HILO KERNEL. Segmento escrito correctamente
+[INFO] 14:01:13:87 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:14:170 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:15:375 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:16:517 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:17:623 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:18:727 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:19:851 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:21:78 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:22:222 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:23:327 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:24:432 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:25:562 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:26:795 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:27:937 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:29:40 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:30:145 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:31:269 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:32:494 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:33:638 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:34:741 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:35:845 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:36:969 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:38:196 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:39:337 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:40:442 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:41:552 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:42:676 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:43:904 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:45:45 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:46:147 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:47:251 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:48:374 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:49:604 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:50:745 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:51:848 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:52:954 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:54:80 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:55:305 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:56:445 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:57:548 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:58:651 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:01:59:775 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:02:00:0 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:02:02:141 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:02:03:246 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:02:04:350 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:02:05:473 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:02:06:699 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:02:07:842 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:02:08:944 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:02:10:49 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:02:11:173 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:02:12:399 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:02:13:541 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:02:14:645 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:02:15:749 umv/(2933:2942): Cambio al proceso 4
+[INFO] 14:02:16:852 umv/(2933:2942): Hilo CPU. Segmentation Fault al intentar escribir PID 4, BASE -677395630, TAMANIO 5

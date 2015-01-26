@@ -1,0 +1,290 @@
+[INFO] 15:35:40:800 IO_log.log/(3539:3540): Empieza IO: LPT1.
+
+[INFO] 15:35:40:801 IO_log.log/(3539:3541): Empieza IO: HDD1.
+
+[INFO] 15:39:09:586 IO_log.log/(3729:3731): Empieza IO: HDD1.
+
+[INFO] 15:39:09:587 IO_log.log/(3729:3730): Empieza IO: LPT1.
+
+[INFO] 15:41:19:613 IO_log.log/(3825:3827): Empieza IO: HDD1.
+
+[INFO] 15:41:19:613 IO_log.log/(3825:3826): Empieza IO: LPT1.
+
+[INFO] 15:59:40:52 IO_log.log/(3884:3886): Empieza IO: HDD1.
+
+[INFO] 15:59:40:53 IO_log.log/(3884:3885): Empieza IO: LPT1.
+
+[INFO] 16:02:57:441 IO_log.log/(3995:3997): Empieza IO: HDD1.
+
+[INFO] 16:02:57:442 IO_log.log/(3995:3996): Empieza IO: LPT1.
+
+[INFO] 16:05:14:734 IO_log.log/(4031:4033): Empieza IO: HDD1.
+
+[INFO] 16:05:14:734 IO_log.log/(4031:4032): Empieza IO: LPT1.
+
+[INFO] 16:15:41:853 IO_log.log/(4163:4165): Empieza IO: HDD1.
+
+[INFO] 16:15:41:854 IO_log.log/(4163:4164): Empieza IO: LPT1.
+
+[INFO] 16:20:18:582 IO_log.log/(4212:4214): Empieza IO: HDD1.
+
+[INFO] 16:20:18:582 IO_log.log/(4212:4213): Empieza IO: LPT1.
+
+[INFO] 16:31:47:757 IO_log.log/(4347:4349): Empieza IO: HDD1.
+
+[INFO] 16:31:47:759 IO_log.log/(4347:4348): Empieza IO: LPT1.
+
+[INFO] 16:32:20:629 IO_log.log/(4365:4367): Empieza IO: HDD1.
+
+[INFO] 16:32:20:629 IO_log.log/(4365:4366): Empieza IO: LPT1.
+
+[INFO] 11:49:11:621 IO_log.log/(1902:1904): Empieza IO: HDD1.
+
+[INFO] 11:49:11:622 IO_log.log/(1902:1903): Empieza IO: LPT1.
+
+[INFO] 11:53:56:556 IO_log.log/(2001:2003): Empieza IO: HDD1.
+
+[INFO] 11:53:56:557 IO_log.log/(2001:2002): Empieza IO: LPT1.
+
+[INFO] 11:55:10:790 IO_log.log/(2001:2002): 		LPT1: bloqueo programa: 1 por 20000 milisegundos.
+
+[INFO] 11:55:10:790 IO_log.log/(2001:2002): Empieza bloqueo
+
+[INFO] 11:55:30:791 IO_log.log/(2001:2002): Termina bloqueo, mando mensaje: 4000, 1, LPT1.
+
+[INFO] 11:55:31:875 IO_log.log/(2001:2003): 		HDD1: bloqueo programa: 1 por 5000 milisegundos.
+
+[INFO] 11:55:31:875 IO_log.log/(2001:2003): Empieza bloqueo
+
+[INFO] 11:55:36:875 IO_log.log/(2001:2003): Termina bloqueo, mando mensaje: 4000, 1, HDD1.
+
+[INFO] 12:08:27:983 IO_log.log/(2427:2429): Empieza IO: HDD1.
+
+[INFO] 12:08:27:984 IO_log.log/(2427:2428): Empieza IO: LPT1.
+
+[INFO] 12:08:55:278 IO_log.log/(2427:2428): 		LPT1: bloqueo programa: 1 por 20000 milisegundos.
+
+[INFO] 12:08:55:278 IO_log.log/(2427:2428): Empieza bloqueo
+
+[INFO] 12:09:15:278 IO_log.log/(2427:2428): Termina bloqueo, mando mensaje: 4000, 1, LPT1.
+
+[INFO] 12:09:16:362 IO_log.log/(2427:2429): 		HDD1: bloqueo programa: 1 por 5000 milisegundos.
+
+[INFO] 12:09:16:362 IO_log.log/(2427:2429): Empieza bloqueo
+
+[INFO] 12:09:21:363 IO_log.log/(2427:2429): Termina bloqueo, mando mensaje: 4000, 1, HDD1.
+
+[INFO] 12:11:43:162 IO_log.log/(2427:2428): 		LPT1: bloqueo programa: 2 por 20000 milisegundos.
+
+[INFO] 12:11:43:162 IO_log.log/(2427:2428): Empieza bloqueo
+
+[INFO] 12:12:03:162 IO_log.log/(2427:2428): Termina bloqueo, mando mensaje: 4000, 2, LPT1.
+
+[INFO] 12:12:04:246 IO_log.log/(2427:2429): 		HDD1: bloqueo programa: 2 por 5000 milisegundos.
+
+[INFO] 12:12:04:246 IO_log.log/(2427:2429): Empieza bloqueo
+
+[INFO] 12:12:09:246 IO_log.log/(2427:2429): Termina bloqueo, mando mensaje: 4000, 2, HDD1.
+
+[INFO] 12:23:28:670 IO_log.log/(2531:2533): Empieza IO: HDD1.
+
+[INFO] 12:23:28:671 IO_log.log/(2531:2532): Empieza IO: LPT1.
+
+[INFO] 12:23:46:11 IO_log.log/(2541:2543): Empieza IO: HDD1.
+
+[INFO] 12:23:46:11 IO_log.log/(2541:2542): Empieza IO: LPT1.
+
+[INFO] 12:26:35:944 IO_log.log/(2556:2558): Empieza IO: HDD1.
+
+[INFO] 12:26:35:944 IO_log.log/(2556:2557): Empieza IO: LPT1.
+
+[INFO] 12:28:45:297 IO_log.log/(2575:2577): Empieza IO: HDD1.
+
+[INFO] 12:28:45:297 IO_log.log/(2575:2576): Empieza IO: LPT1.
+
+[INFO] 12:29:02:116 IO_log.log/(2585:2587): Empieza IO: HDD1.
+
+[INFO] 12:29:02:116 IO_log.log/(2585:2586): Empieza IO: LPT1.
+
+[INFO] 12:29:37:236 IO_log.log/(2602:2604): Empieza IO: HDD1.
+
+[INFO] 12:29:37:237 IO_log.log/(2602:2603): Empieza IO: LPT1.
+
+[INFO] 12:30:56:713 IO_log.log/(2602:2603): 		LPT1: bloqueo programa: 1 por 20000 milisegundos.
+
+[INFO] 12:30:56:713 IO_log.log/(2602:2603): Empieza bloqueo
+
+[INFO] 12:31:16:714 IO_log.log/(2602:2603): Termina bloqueo, mando mensaje: 4000, 1, LPT1.
+
+[INFO] 12:31:17:797 IO_log.log/(2602:2604): 		HDD1: bloqueo programa: 1 por 5000 milisegundos.
+
+[INFO] 12:31:17:797 IO_log.log/(2602:2604): Empieza bloqueo
+
+[INFO] 12:31:22:797 IO_log.log/(2602:2604): Termina bloqueo, mando mensaje: 4000, 1, HDD1.
+
+[INFO] 12:33:12:496 IO_log.log/(2602:2603): 		LPT1: bloqueo programa: 2 por 20000 milisegundos.
+
+[INFO] 12:33:12:496 IO_log.log/(2602:2603): Empieza bloqueo
+
+[INFO] 12:33:32:497 IO_log.log/(2602:2603): Termina bloqueo, mando mensaje: 4000, 2, LPT1.
+
+[INFO] 12:33:33:580 IO_log.log/(2602:2604): 		HDD1: bloqueo programa: 2 por 5000 milisegundos.
+
+[INFO] 12:33:33:580 IO_log.log/(2602:2604): Empieza bloqueo
+
+[INFO] 12:33:38:580 IO_log.log/(2602:2604): Termina bloqueo, mando mensaje: 4000, 2, HDD1.
+
+[INFO] 12:34:50:916 IO_log.log/(2602:2603): 		LPT1: bloqueo programa: 3 por 20000 milisegundos.
+
+[INFO] 12:34:50:916 IO_log.log/(2602:2603): Empieza bloqueo
+
+[INFO] 12:35:10:916 IO_log.log/(2602:2603): Termina bloqueo, mando mensaje: 4000, 3, LPT1.
+
+[INFO] 12:35:11:1 IO_log.log/(2602:2604): 		HDD1: bloqueo programa: 3 por 5000 milisegundos.
+
+[INFO] 12:35:11:1 IO_log.log/(2602:2604): Empieza bloqueo
+
+[INFO] 12:35:16:1 IO_log.log/(2602:2604): Termina bloqueo, mando mensaje: 4000, 3, HDD1.
+
+[INFO] 12:37:43:87 IO_log.log/(2602:2603): 		LPT1: bloqueo programa: 4 por 20000 milisegundos.
+
+[INFO] 12:37:43:87 IO_log.log/(2602:2603): Empieza bloqueo
+
+[INFO] 12:38:03:88 IO_log.log/(2602:2603): Termina bloqueo, mando mensaje: 4000, 4, LPT1.
+
+[INFO] 12:38:04:172 IO_log.log/(2602:2604): 		HDD1: bloqueo programa: 4 por 5000 milisegundos.
+
+[INFO] 12:38:04:172 IO_log.log/(2602:2604): Empieza bloqueo
+
+[INFO] 12:38:09:173 IO_log.log/(2602:2604): Termina bloqueo, mando mensaje: 4000, 4, HDD1.
+
+[INFO] 12:39:36:341 IO_log.log/(2602:2603): 		LPT1: bloqueo programa: 5 por 20000 milisegundos.
+
+[INFO] 12:39:36:341 IO_log.log/(2602:2603): Empieza bloqueo
+
+[INFO] 12:39:56:342 IO_log.log/(2602:2603): Termina bloqueo, mando mensaje: 4000, 5, LPT1.
+
+[INFO] 12:39:57:424 IO_log.log/(2602:2604): 		HDD1: bloqueo programa: 5 por 5000 milisegundos.
+
+[INFO] 12:39:57:424 IO_log.log/(2602:2604): Empieza bloqueo
+
+[INFO] 12:40:02:425 IO_log.log/(2602:2604): Termina bloqueo, mando mensaje: 4000, 5, HDD1.
+
+[INFO] 12:41:55:935 IO_log.log/(2602:2603): 		LPT1: bloqueo programa: 6 por 20000 milisegundos.
+
+[INFO] 12:41:55:935 IO_log.log/(2602:2603): Empieza bloqueo
+
+[INFO] 12:42:15:935 IO_log.log/(2602:2603): Termina bloqueo, mando mensaje: 4000, 6, LPT1.
+
+[INFO] 12:42:17:19 IO_log.log/(2602:2604): 		HDD1: bloqueo programa: 6 por 5000 milisegundos.
+
+[INFO] 12:42:17:19 IO_log.log/(2602:2604): Empieza bloqueo
+
+[INFO] 12:42:22:20 IO_log.log/(2602:2604): Termina bloqueo, mando mensaje: 4000, 6, HDD1.
+
+[INFO] 12:50:23:245 IO_log.log/(2602:2603): 		LPT1: bloqueo programa: 10 por 20000 milisegundos.
+
+[INFO] 12:50:23:245 IO_log.log/(2602:2603): Empieza bloqueo
+
+[INFO] 12:50:43:245 IO_log.log/(2602:2603): Termina bloqueo, mando mensaje: 4000, 10, LPT1.
+
+[INFO] 12:50:44:329 IO_log.log/(2602:2604): 		HDD1: bloqueo programa: 10 por 5000 milisegundos.
+
+[INFO] 12:50:44:329 IO_log.log/(2602:2604): Empieza bloqueo
+
+[INFO] 12:50:49:329 IO_log.log/(2602:2604): Termina bloqueo, mando mensaje: 4000, 10, HDD1.
+
+[INFO] 12:52:44:319 IO_log.log/(2602:2603): 		LPT1: bloqueo programa: 11 por 20000 milisegundos.
+
+[INFO] 12:52:44:319 IO_log.log/(2602:2603): Empieza bloqueo
+
+[INFO] 12:53:04:319 IO_log.log/(2602:2603): Termina bloqueo, mando mensaje: 4000, 11, LPT1.
+
+[INFO] 12:53:05:402 IO_log.log/(2602:2604): 		HDD1: bloqueo programa: 11 por 5000 milisegundos.
+
+[INFO] 12:53:05:402 IO_log.log/(2602:2604): Empieza bloqueo
+
+[INFO] 12:53:10:403 IO_log.log/(2602:2604): Termina bloqueo, mando mensaje: 4000, 11, HDD1.
+
+[INFO] 12:55:26:191 IO_log.log/(2602:2603): 		LPT1: bloqueo programa: 12 por 20000 milisegundos.
+
+[INFO] 12:55:26:191 IO_log.log/(2602:2603): Empieza bloqueo
+
+[INFO] 12:55:46:191 IO_log.log/(2602:2603): Termina bloqueo, mando mensaje: 4000, 12, LPT1.
+
+[INFO] 12:57:17:998 IO_log.log/(2753:2755): Empieza IO: HDD1.
+
+[INFO] 12:57:17:999 IO_log.log/(2753:2754): Empieza IO: LPT1.
+
+[INFO] 12:57:45:892 IO_log.log/(2753:2754): 		LPT1: bloqueo programa: 1 por 20000 milisegundos.
+
+[INFO] 12:57:45:892 IO_log.log/(2753:2754): Empieza bloqueo
+
+[INFO] 12:58:05:892 IO_log.log/(2753:2754): Termina bloqueo, mando mensaje: 4000, 1, LPT1.
+
+[INFO] 12:58:06:975 IO_log.log/(2753:2755): 		HDD1: bloqueo programa: 1 por 5000 milisegundos.
+
+[INFO] 12:58:06:976 IO_log.log/(2753:2755): Empieza bloqueo
+
+[INFO] 12:58:11:976 IO_log.log/(2753:2755): Termina bloqueo, mando mensaje: 4000, 1, HDD1.
+
+[INFO] 13:09:19:479 IO_log.log/(2837:2839): Empieza IO: HDD1.
+
+[INFO] 13:09:19:479 IO_log.log/(2837:2838): Empieza IO: LPT1.
+
+[INFO] 13:11:04:898 IO_log.log/(2837:2838): 		LPT1: bloqueo programa: 2 por 20000 milisegundos.
+
+[INFO] 13:11:04:898 IO_log.log/(2837:2838): Empieza bloqueo
+
+[INFO] 13:11:24:899 IO_log.log/(2837:2838): Termina bloqueo, mando mensaje: 4000, 2, LPT1.
+
+[INFO] 13:11:25:982 IO_log.log/(2837:2839): 		HDD1: bloqueo programa: 2 por 5000 milisegundos.
+
+[INFO] 13:11:25:982 IO_log.log/(2837:2839): Empieza bloqueo
+
+[INFO] 13:11:30:983 IO_log.log/(2837:2839): Termina bloqueo, mando mensaje: 4000, 2, HDD1.
+
+[INFO] 13:56:37:10 IO_log.log/(2928:2930): Empieza IO: HDD1.
+
+[INFO] 13:56:37:11 IO_log.log/(2928:2929): Empieza IO: LPT1.
+
+[INFO] 13:56:48:568 IO_log.log/(2935:2937): Empieza IO: HDD1.
+
+[INFO] 13:56:48:568 IO_log.log/(2935:2936): Empieza IO: LPT1.
+
+[INFO] 13:57:11:819 IO_log.log/(2935:2936): 		LPT1: bloqueo programa: 1 por 20000 milisegundos.
+
+[INFO] 13:57:11:819 IO_log.log/(2935:2936): Empieza bloqueo
+
+[INFO] 13:57:31:819 IO_log.log/(2935:2936): Termina bloqueo, mando mensaje: 4000, 1, LPT1.
+
+[INFO] 13:57:32:903 IO_log.log/(2935:2937): 		HDD1: bloqueo programa: 1 por 5000 milisegundos.
+
+[INFO] 13:57:32:903 IO_log.log/(2935:2937): Empieza bloqueo
+
+[INFO] 13:57:37:904 IO_log.log/(2935:2937): Termina bloqueo, mando mensaje: 4000, 1, HDD1.
+
+[INFO] 13:58:32:649 IO_log.log/(2935:2936): 		LPT1: bloqueo programa: 2 por 20000 milisegundos.
+
+[INFO] 13:58:32:650 IO_log.log/(2935:2936): Empieza bloqueo
+
+[INFO] 13:58:52:650 IO_log.log/(2935:2936): Termina bloqueo, mando mensaje: 4000, 2, LPT1.
+
+[INFO] 13:58:53:733 IO_log.log/(2935:2937): 		HDD1: bloqueo programa: 2 por 5000 milisegundos.
+
+[INFO] 13:58:53:733 IO_log.log/(2935:2937): Empieza bloqueo
+
+[INFO] 13:58:58:734 IO_log.log/(2935:2937): Termina bloqueo, mando mensaje: 4000, 2, HDD1.
+
+[INFO] 14:00:04:921 IO_log.log/(2935:2936): 		LPT1: bloqueo programa: 3 por 20000 milisegundos.
+
+[INFO] 14:00:04:921 IO_log.log/(2935:2936): Empieza bloqueo
+
+[INFO] 14:00:24:922 IO_log.log/(2935:2936): Termina bloqueo, mando mensaje: 4000, 3, LPT1.
+
+[INFO] 14:00:26:6 IO_log.log/(2935:2937): 		HDD1: bloqueo programa: 3 por 5000 milisegundos.
+
+[INFO] 14:00:26:6 IO_log.log/(2935:2937): Empieza bloqueo
+
+[INFO] 14:00:31:6 IO_log.log/(2935:2937): Termina bloqueo, mando mensaje: 4000, 3, HDD1.
+
